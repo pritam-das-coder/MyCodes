@@ -1,0 +1,10 @@
+Groceries: 150.75
+Rent: 800.00
+Utilities: 75.30
+Transportation: 50.00
+Dining Out: 65.50
+Shopping: 120.99
+Entertainment: 41.00
+Internet: 60.00
+Subscriptions: 25.00
+Miscellaneous: 30.20

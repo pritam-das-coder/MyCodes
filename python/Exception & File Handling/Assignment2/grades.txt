@@ -1,0 +1,10 @@
+90
+85
+78
+92
+80
+Alice:85
+Bob:92
+Charlie:78
+David:90
+Eve:88

@@ -1,0 +1,46 @@
+// Write a program to Print the transpose of 
+// the matrix entered by the user.
+#include <stdio.h>
+int main(){
+    int n,m;
+    printf("Enter number of rows : ");
+    scanf("%d",&n);
+    printf("Enter number of columns : ");
+    scanf("%d",&m);
+    int arr[n][m];
+    printf("Enter all elements of array : \n");
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("Your Array : \n");
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    // int transpose[m][n];
+    // for(int i=0;i<m;i++){
+    //     for(int j=0;j<n;j++){
+    //         transpose[i][j]=arr[j][i];
+    //     }
+    // }
+    // printf("Transpose Matrix : \n");
+    // for(int i=0;i<m;i++){
+    //     for(int j=0;j<n;j++){
+    //         printf("%d ",transpose[i][j]);
+    //     }
+    //     printf("\n");
+    // }
+    // without using extra array
+    printf("Transpose Matrix : \n");
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",arr[j][i]);
+        }
+        printf("\n");
+    }
+    return 0;
+}

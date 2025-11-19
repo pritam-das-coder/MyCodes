@@ -1,0 +1,6 @@
+Pritam Das: pdascse24@gmail.com
+John Doe: john.doe@Example.com
+Jane Smith (Work): jane.smith@company.org
+Another Person: another.person@mail.net
+No Email Here.
+Contact with multiple emails: first@email.com, second@email.net
