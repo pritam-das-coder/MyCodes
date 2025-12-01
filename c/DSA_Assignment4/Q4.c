@@ -15,11 +15,9 @@ int main(){
     int n=8;
     int keys[]={12,18,33,2,3,22,5,15};
 
-    int no_of_collision=0;
     for(int i=0;i<n;i++){
         int probe=h(keys[i],m);
         while(hash_table[probe]!=INT_MIN){
-            no_of_collision++;
             probe=(probe+1)%m;
         }
         hash_table[probe]=keys[i];
@@ -29,7 +27,6 @@ int main(){
     for(int i=0;i<m;i++)
         printf("%d\n",hash_table[i]);
     
-    printf("The total no of collisions is %d\n",no_of_collision);
-    printf("Load Factor is %f\n",(n*1.0/m));
+    
     return 0;
 }
