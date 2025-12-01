@@ -5,6 +5,6 @@ root=Tk()
 root.geometry("500x200") # initial window size
 
 # width,height
-# root.minsize(200,50)
+root.minsize(200,50)
 
 root.mainloop()
