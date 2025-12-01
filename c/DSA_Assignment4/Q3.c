@@ -32,7 +32,11 @@ int main(){
         while(hash_table[probe]!=INT_MIN){
             probe=(probe+1)%M;
         }
-        
+        hash_table[probe]=keys[i];
     }
+
+    printf("Final Hash Table :\n");
+    for(int i=0;i<M;i++)
+        printf("%d\n",hash_table[i]);
     return 0;
 }
