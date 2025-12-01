@@ -1,3 +1,35 @@
 // Insert the keys 12, 18, 33, 2, 3, 22, 5, and 15 into a hash table of size 11 using h(k)=
 // k mod 11 and linear probing.Implement the idea of search for the user given input in
 // this table considering collisions as well.
+#include <stdio.h>
+#include <limits.h>
+int h(int k,int m){
+    return k%m;
+}
+int main(){
+    int m=11;
+    int hash_table[m];
+
+    for(int i=0;i<m;i++) hash_table[i]=INT_MIN;
+
+    int n=8;
+    int keys[]={12,18,33,2,3,22,5,15};
+
+    int no_of_collision=0;
+    for(int i=0;i<n;i++){
+        int probe=h(keys[i],m);
+        while(hash_table[probe]!=INT_MIN){
+            no_of_collision++;
+            probe=(probe+1)%m;
+        }
+        hash_table[probe]=keys[i];
+    }
+
+    printf("Final Hash Table :\n");
+    for(int i=0;i<m;i++)
+        printf("%d\n",hash_table[i]);
+    
+    printf("The total no of collisions is %d\n",no_of_collision);
+    printf("Load Factor is %f\n",(n*1.0/m));
+    return 0;
+}
