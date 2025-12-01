@@ -27,6 +27,13 @@ int main(){
     for(int i=0;i<m;i++)
         printf("%d\n",hash_table[i]);
     
+    int item;
+    printf("Enter the key you want to search : %d",item);
+
+    int probe=h(item,m);
+    while(hash_table[probe]!=item){
+        probe=(probe+1)%m;
+    }
     
     return 0;
 }
