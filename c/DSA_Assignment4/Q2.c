@@ -31,6 +31,7 @@ int main(){
         hash_table[probe]=keys[i];
     }
 
+    printf("Final Hash Table :\n");
     for(int i=0;i<m;i++)
         printf("%d\n",hash_table[i]);
     
