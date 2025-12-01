@@ -28,13 +28,21 @@ int main(){
         printf("%d\n",hash_table[i]);
     
     int item;
-    printf("Enter the key you want to search : %d",item);
+    printf("Enter the key you want to search : ");
+    scanf("%d",&item);
 
-    int idx=h(item,m);
-    int probe=idx;
+    int sidx=h(item,m);
+    int probe=sidx;
+    int flag=1;
     while(hash_table[probe]!=item){
         probe=(probe+1)%m;
+        if(probe==sidx){
+            flag=0;
+            break;
+        }
     }
+    if(flag) printf("Given key found at index %d",probe);
+    else printf("Given key not found");
 
     return 0;
 }
