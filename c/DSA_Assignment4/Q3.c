@@ -5,7 +5,7 @@
 //     int x=(key+7)*(key+7);
 //     x = x / 16;
 //     x = x + key;
-//     X=X% 11;
+//     x=x% 11;
 //     return x;
 // }
 // Suppose that collisions are resolvedby using Linear Probing. Show the final contents of the hash Table after the following key
