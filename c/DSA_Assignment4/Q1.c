@@ -7,15 +7,20 @@
 // h(12)=12%10=2. Insert 12 at index 2.
 // Continue this process for all keys.
 #include <stdio.h>
+#include <limits.h>
 int h(k){
     return k%10;
 }
 int main(){
     int hash_table[10];
+
+    for(int i=0;i<10;i++) hash_table[i]=INT_MIN;
+
     int keys[]={12,18,13,2,3,23,5,15};
+
     for(int i=0;i<8;i++){
         int idx=h(keys[i]);
-
+        
     }
     return 0;
 }
