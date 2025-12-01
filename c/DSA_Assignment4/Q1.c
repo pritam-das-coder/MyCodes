@@ -19,8 +19,14 @@ int main(){
     int keys[]={12,18,13,2,3,23,5,15};
 
     for(int i=0;i<8;i++){
-        int idx=h(keys[i]);
-        
+        int probe=h(keys[i]);
+        while(hash_table[probe]!=INT_MIN){
+            probe=(probe+1)%10;
+        }
+        hash_table[probe]=keys[i];
     }
+
+    for(int i=0;i<10;i++)
+        printf("%d\n",hash_table[i]);
     return 0;
 }
