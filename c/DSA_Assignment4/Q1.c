@@ -6,3 +6,16 @@
 // of size 10 using h(k)= k mod 10 and linear probing.
 // h(12)=12%10=2. Insert 12 at index 2.
 // Continue this process for all keys.
+#include <stdio.h>
+int h(k){
+    return k%10;
+}
+int main(){
+    int hash_table[10];
+    int keys[]={12,18,13,2,3,23,5,15};
+    for(int i=0;i<8;i++){
+        int idx=h(keys[i]);
+
+    }
+    return 0;
+}
