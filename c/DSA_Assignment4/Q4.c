@@ -30,10 +30,11 @@ int main(){
     int item;
     printf("Enter the key you want to search : %d",item);
 
-    int probe=h(item,m);
+    int idx=h(item,m);
+    int probe=idx;
     while(hash_table[probe]!=item){
         probe=(probe+1)%m;
     }
-    
+
     return 0;
 }
