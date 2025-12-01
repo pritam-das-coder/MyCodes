@@ -8,7 +8,7 @@
 // Continue this process for all keys.
 #include <stdio.h>
 #include <limits.h>
-int h(k){
+int h(int k){
     return k%10;
 }
 int main(){
