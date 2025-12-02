@@ -11,5 +11,6 @@ root.minsize(200,50)
 root.maxsize(800,400)
 
 label=Label(text="I am Pritam")
+label.pack()
 
 root.mainloop()
