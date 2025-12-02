@@ -2,7 +2,8 @@ from tkinter import *
 from PIL import Image, ImageTk
 import os
 
-os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
+cf=os.path.dirname(os.path.abspath(__file__))
+os.chdir(cf)
 root=Tk()
 
 # root.geometry("100x50")
