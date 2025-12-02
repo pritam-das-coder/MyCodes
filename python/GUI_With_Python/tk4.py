@@ -16,5 +16,5 @@ label.pack()
 
 root.mainloop()
 
-# widget->every element in a GUI
-# label-> non-interactive widget
+# widget->every element in a GUI (buttons,label,canvas)
+# label-> non-interactive widget (image,text)
