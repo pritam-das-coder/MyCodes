@@ -5,6 +5,8 @@ import os
 os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
 root=Tk()
 
+# root.geometry("100x50")
+
 image1=Image.open("vk.jpg")
 photo1=ImageTk.PhotoImage(image1)
 
