@@ -2,7 +2,7 @@ from tkinter import *
 
 root=Tk()
 
-root.geometry("300x100")
+root.geometry("500x300")
 
 photo=PhotoImage(file=r"G:\My Drive\MyCodes\python\GUI_With_Python\design.png")
 
