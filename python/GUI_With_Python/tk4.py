@@ -15,3 +15,6 @@ label=Label(text="I am Pritam")
 label.pack()
 
 root.mainloop()
+
+# widget->every element in a GUI
+# label-> non-interactive widget
