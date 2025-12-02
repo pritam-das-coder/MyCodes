@@ -5,10 +5,10 @@ import os
 os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
 root=Tk()
 
-image1=Image("vk.jpg")
+image1=Image.open("vk.jpg")
 photo1=ImageTk.PhotoImage(image1)
 
-image2=Image("flower.png")
+image2=Image.open("flower.png")
 photo2=ImageTk.PhotoImage(image2)
 
 label1=Label(image=photo1)
