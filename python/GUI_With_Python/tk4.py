@@ -1,6 +1,6 @@
 from tkinter import *
 
-root=Tk()
+root=Tk() # Create the basic window
 # width x height
 root.geometry("500x200") # initial window size
 
@@ -10,6 +10,7 @@ root.minsize(200,50)
 # width,height
 root.maxsize(800,400)
 
+# label is an element with which user don't interact
 label=Label(text="I am Pritam")
 label.pack()
 
