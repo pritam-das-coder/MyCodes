@@ -1,3 +1,5 @@
+# tkinter, Image, ImageTk -> module
+# PIL -> package
 from tkinter import *
 from PIL import Image, ImageTk
 
