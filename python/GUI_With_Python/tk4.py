@@ -10,4 +10,6 @@ root.minsize(200,50)
 # width,height
 root.maxsize(800,400)
 
+label=Label(text="I am Pritam")
+
 root.mainloop()
