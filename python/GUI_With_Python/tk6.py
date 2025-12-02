@@ -4,7 +4,7 @@ root=Tk()
 
 root.geometry("300x100")
 
-photo=PhotoImage(file="design.png")
+photo=PhotoImage(file=r"G:\My Drive\MyCodes\python\GUI_With_Python\design.png")
 
 label=Label(image=photo)
 label.pack()
