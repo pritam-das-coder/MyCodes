@@ -12,4 +12,7 @@ root.title("My GUI With Pritam")
 # padx -> x padding
 # pady -> y padding
 # relief -> border styling - SUNKEN, RAISED, GROOVE, RIDGE
+
+title_label = Label(text="")
+
 root.mainloop()
