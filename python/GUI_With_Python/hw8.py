@@ -6,7 +6,7 @@ root=Tk()
 root.geometry("800x400")
 root.title("My Newspaper GUI")
 
-newspaper_name=Label(text="The Telegraph")
+newspaper_name=Label(text="The Telegraph",font=("Times New Roman",20,"bold"))
 newspaper_name.pack()
 
 folder=r"C:\Users\daspr\OneDrive\Pictures\Web Photos"
@@ -30,7 +30,7 @@ for file in files_list:
         tk_text=text_file.read()
 
         label=Label(image=tk_img,text=tk_text,compound="top",width=250,height=900)
-        label.pack(side="left",padx=20,anchor="sw")
+        label.pack(side="left",padx=20)
 
 
 
