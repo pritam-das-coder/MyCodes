@@ -9,15 +9,27 @@ root.title("My Newspaper GUI")
 newspaper_name=Label(text="The Telegraph")
 newspaper_name.pack()
 
-img=Image.open(r"G:\My Drive\MyCodes\python\GUI_With_Python\vk.jpg")
-tk_img=ImageTk.PhotoImage(img)
+folder=r"C:\Users\daspr\OneDrive\Pictures\Web Photos"
+files_list=os.listdir(folder)
 
-l=Label(image=tk_img,text="Hello",compound="top")
-l.pack()
-# folder=r""
-# files_list=os.listdir(folder)
+img_list=[]
 
-# for file in files_list:
+for file in files_list:
+    if file.endswith(".png") or file.endswith(".webp") or file.endswith(".jpg"):
+        corr_text_file=file[0]+".txt"
+        full_text_path=os.path.join(folder,corr_text_file)
+        full_img_path=os.path.join(folder,file)
+
+        img=Image.open(full_img_path)
+        tk_img=ImageTk.PhotoImage(img)
+        img_list.append(tk_img)
+        
+        text_file=open(full_text_path,"r")
+        tk_text=text_file.read()
+
+        label=Label(image=tk_img,text=tk_text,compound="top")
+        label.pack()
+
 
 
 root.mainloop()
