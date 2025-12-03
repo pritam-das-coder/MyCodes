@@ -7,6 +7,9 @@ root = Tk()
 root.geometry("1000x400")
 root.title("My Photo Album")
 
+# l=Label(text="My Photo Album")
+# l.pack()
+
 # 2. Reading the images (Using 'os' module as requested)
 # Change this to the folder path on your computer
 folder_path = r"G:\My Drive\MyCodes\python\GUI_With_Python"
@@ -31,7 +34,7 @@ for filename in all_files:
         # Open and Resize Image using PIL
         # We resize because photos are usually too big for the screen
         raw_img = Image.open(full_path)
-        raw_img = raw_img.resize((200, 200)) # Make them 200x200 squares
+        raw_img = raw_img.resize((200, 300)) # Make them 200x200 squares
         
         # Convert to Tkinter compatible format
         tk_img = ImageTk.PhotoImage(raw_img)
