@@ -37,7 +37,7 @@ for filename in all_files:
         tk_img = ImageTk.PhotoImage(raw_img)
         
         # Save to our list so it doesn't get deleted by Python
-        image_list.append(tk_img)
+        # image_list.append(tk_img)
         
         # 4. Display using Label and Pack (Videos 5-6)
         # We use side="left" to line them up horizontally
