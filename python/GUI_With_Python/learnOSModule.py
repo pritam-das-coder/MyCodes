@@ -3,7 +3,7 @@ import os
 # from PIL import Image, ImageTk
 
 # print(f"Initial : {os.getcwd()}")
-os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
+# os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
 # print(f"Final : {os.getcwd()}")
 
 # root=Tk()
@@ -15,4 +15,5 @@ os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
 # label.pack()
 
 # root.mainloop()
-print(os.listdir(os.getcwd()))
+# print(os.listdir(os.getcwd()))
+print(os.path.join(r"G:\My Drive\MyCodes\python",r"G:\My Drive\MyCodes\python\GUI_With_Python"))
