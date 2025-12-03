@@ -1,17 +1,18 @@
 import os
-from tkinter import *
-from PIL import Image, ImageTk
+# from tkinter import *
+# from PIL import Image, ImageTk
 
 print(f"Initial : {os.getcwd()}")
-os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
-print(f"Final : {os.getcwd()}")
+# os.chdir(r"G:\My Drive\MyCodes\python\GUI_With_Python")
+# print(f"Final : {os.getcwd()}")
 
-root=Tk()
+# root=Tk()
 
-image=Image.open("vk.jpg")
-photo=ImageTk.PhotoImage(image)
+# image=Image.open("vk.jpg")
+# photo=ImageTk.PhotoImage(image)
 
-label=Label(image=photo)
-label.pack()
+# label=Label(image=photo)
+# label.pack()
 
-root.mainloop()
+# root.mainloop()
+print(os.listdir(os.getcwd()))
