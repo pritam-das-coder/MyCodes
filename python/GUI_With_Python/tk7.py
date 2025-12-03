@@ -22,6 +22,9 @@ title_label = Label(text="The Republic of India, also known as Bharat, is a fede
 font="comicsansms 12 bold" ,borderwidth=10,relief=SUNKEN
 )
 
-title_label.pack()
+# Important Pack Parameters
+# anchor -> ne, nw, se, sw
+# side -> left, right, top, bottom
+title_label.pack(side="top",anchor="ne")
 
 root.mainloop()
