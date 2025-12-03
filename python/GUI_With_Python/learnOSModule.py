@@ -16,4 +16,4 @@ import os
 
 # root.mainloop()
 # print(os.listdir(os.getcwd()))
-print(os.path.join(r"G:\My Drive\MyCodes\python",r"G:\My Drive\MyCodes\python\GUI_With_Python"))
+print(os.path.join(r"G:\My Drive\MyCodes\python",r"GUI_With_Python"))
