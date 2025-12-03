@@ -24,6 +24,6 @@ for file in files_present:
         image_list.append(tk_img)
 
         label=Label(image=tk_img)
-        label.pack()
+        label.pack(side="left",padx=20,pady=20)
 
 root.mainloop()
