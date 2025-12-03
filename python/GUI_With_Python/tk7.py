@@ -27,6 +27,7 @@ font="comicsansms 8 bold" ,borderwidth=5,relief=SUNKEN
 # side -> left, right, top, bottom
 # fill -> Y(use side="right" or "left"), X(use side="top" or "bottom")
 # title_label.pack(side="top",anchor="ne", fill=X)
-title_label.pack(side="left",anchor="ne", fill=Y)
+# title_label.pack(side="left",anchor="ne", fill=Y)
+title_label.pack(padx=12,pady=50)
 
 root.mainloop()
