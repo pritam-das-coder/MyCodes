@@ -3,7 +3,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 root=Tk()
-root.geometry("400x300")
+root.geometry("1000x300")
 root.title("Photo Album")
 
 image_folder=r"C:\Users\daspr\OneDrive\Pictures\Web Photos"
@@ -17,7 +17,7 @@ for file in files_present:
         full_path=os.path.join(image_folder,file)
 
         img=Image.open(full_path)
-        img=img.resize(100,200)
+        img=img.resize((200,200))
 
         tk_img=ImageTk.PhotoImage(img)
 
