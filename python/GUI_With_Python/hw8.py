@@ -21,9 +21,11 @@ for file in files_list:
         full_img_path=os.path.join(folder,file)
 
         img=Image.open(full_img_path)
+        img=img.resize((200,100))
         tk_img=ImageTk.PhotoImage(img)
-        img_list.append(tk_img)
         
+        img_list.append(tk_img)
+
         text_file=open(full_text_path,"r")
         tk_text=text_file.read()
 
