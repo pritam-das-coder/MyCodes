@@ -42,6 +42,6 @@ for filename in all_files:
         # 4. Display using Label and Pack (Videos 5-6)
         # We use side="left" to line them up horizontally
         label = Label(root, image=tk_img)
-        label.pack(side="left", padx=5, pady=5)
+        label.pack(side="left", padx=30, pady=5)
 
 root.mainloop()
