@@ -25,7 +25,7 @@ font="comicsansms 8 bold" ,borderwidth=5,relief=SUNKEN
 # Important Pack Parameters
 # anchor -> ne, nw, se, sw
 # side -> left, right, top, bottom
-# fill -> X, Y
+# fill -> Y(use side="right" or "left"), X(use side="top" or "bottom")
 # title_label.pack(side="top",anchor="ne", fill=X)
 title_label.pack(side="left",anchor="ne", fill=Y)
 
