@@ -13,6 +13,9 @@ root.title("My GUI With Pritam")
 # pady -> y padding
 # relief -> border styling - SUNKEN, RAISED, GROOVE, RIDGE
 
-title_label = Label(text="")
+title_label = Label(text="The Republic of India, also known as Bharat, is a federal parliamentary republic in " \
+"South Asia and the world's most populous country and largest democracy.\n New Delhi is its capital, and Mumbai is its " \
+"largest city by population.")
+title_label.pack()
 
 root.mainloop()
