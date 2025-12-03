@@ -7,6 +7,7 @@ root.geometry("800x400")
 root.title("My Newspaper GUI")
 
 newspaper_name=Label(text="The Telegraph")
+newspaper_name.pack()
 
 img=Image.open(r"G:\My Drive\MyCodes\python\GUI_With_Python\vk.jpg")
 tk_img=ImageTk.PhotoImage(img)
