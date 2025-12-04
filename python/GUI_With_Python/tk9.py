@@ -10,7 +10,7 @@ f2=Frame(root,bg="grey",borderwidth=8,relief=SUNKEN)
 f2.pack(side="top",fill=X)
 
 l1=Label(f1, text="Project")
-l1.pack(pady=142)
+l1.pack(pady=200)
 
 l2=Label(f2,text="Welcome")
 l2.pack()
