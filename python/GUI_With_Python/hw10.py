@@ -18,13 +18,13 @@ root.geometry("400x300")
 f=Frame(root,borderwidth=8,relief=RIDGE,bg="grey")
 f.pack(side="left",anchor="nw")
 
-b1=Button(f,text="Name",command=name)
+b1=Button(f,text="Name",command=name,borderwidth=5)
 b1.pack(side="left",padx=10)
 
-b2=Button(f,text="Course",command=course)
+b2=Button(f,text="Course",command=course,borderwidth=5)
 b2.pack(side="left",padx=10)
 
-b3=Button(f,text="Year",command=year)
+b3=Button(f,text="Year",command=year,borderwidth=5)
 b3.pack(side="left",padx=10)
 
 b4=Button(f,text="Hobby",command=hobby)
