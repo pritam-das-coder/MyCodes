@@ -13,6 +13,6 @@ l1=Label(f1, text="Project Hi \nHello")
 l1.pack(pady=150)
 
 l2=Label(f2,text="Welcome",font="Helvetica 16 bold",fg="red",pady=22)
-l2.pack()
+l2.pack(pady=20)
 
 root.mainloop()
