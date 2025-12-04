@@ -1,5 +1,9 @@
 from tkinter import *
 
+def display():
+    print(f"The username is {uservalue}")
+    print(f"The password is {passvalue}")
+
 root=Tk()
 root.geometry("500x250")
 
@@ -20,5 +24,8 @@ passentry = Entry(root, textvariable=passvalue)
 
 userentry.grid(row=0,column=1)
 passentry.grid(row=1,column=1)
+
+show = Button(root,text="Submit",command=display)
+show.grid()
 
 root.mainloop()
