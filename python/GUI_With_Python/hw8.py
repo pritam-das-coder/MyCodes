@@ -33,7 +33,7 @@ for file in files_list:
         f.pack(side="top")
 
         label=Label(f,image=tk_img,text=tk_text,compound="top")
-        label.pack(side="top",padx=10)
+        label.pack(padx=10)
 
 
 
