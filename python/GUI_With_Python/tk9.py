@@ -12,7 +12,7 @@ f2.pack(side="top",fill=X)
 l1=Label(f1, text="Project")
 l1.pack(pady=142)
 
-l2=Label(f2)
+l2=Label(f2,text="Welcome")
 l2.pack()
 
 root.mainloop()
