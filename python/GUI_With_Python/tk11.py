@@ -1,8 +1,8 @@
 from tkinter import *
 
 def display():
-    print(f"The username is {uservalue}")
-    print(f"The password is {passvalue}")
+    print(f"The username is {uservalue.get()}")
+    print(f"The password is {passvalue.get()}")
 
 root=Tk()
 root.geometry("500x250")
