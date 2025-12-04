@@ -6,6 +6,9 @@ root.geometry("655x333")
 f1=Frame(root,bg="grey",borderwidth=6,relief=SUNKEN)
 f1.pack(side="left", fill=Y,pady=100)
 
+f3=Frame(root,bg="grey",borderwidth=6,relief=SUNKEN)
+f3.pack(side="left")
+
 f2=Frame(root,bg="grey",borderwidth=8,relief=SUNKEN)
 f2.pack(side="top",fill=X)
 
@@ -14,5 +17,8 @@ l1.pack(pady=150)
 
 l2=Label(f2,text="Welcome",font="Helvetica 16 bold",fg="red",pady=22)
 l2.pack()
+
+l3=Label(f3,text="Joker")
+l3.pack()
 
 root.mainloop()
