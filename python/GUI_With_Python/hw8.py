@@ -30,7 +30,7 @@ for file in files_list:
         tk_text=text_file.read()
 
         f=Frame(root,bg="yellow",borderwidth=4,relief=SUNKEN)
-        f.pack(side="left")
+        f.pack(side="left",anchor="nw")
 
         label=Label(f,image=tk_img,text=tk_text,compound="top",bg="yellow",anchor="nw")
         label.pack(padx=10)
