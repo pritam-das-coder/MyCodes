@@ -9,4 +9,9 @@ password = Label(root, text="Password")
 username.grid()
 password.grid()
 
+# Variable classes in tkinter
+# StringVar , DoubleVar, BooleanVar, IntVar
+
+
+
 root.mainloop()
