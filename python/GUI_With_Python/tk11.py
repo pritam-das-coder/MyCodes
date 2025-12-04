@@ -12,6 +12,13 @@ password.grid()
 # Variable classes in tkinter
 # StringVar , DoubleVar, BooleanVar, IntVar
 
+uservalue = StringVar()
+passvalue = StringVar()
 
+userentry = Entry(root, textvariable=uservalue)
+passentry = Entry(root, textvariable=passvalue)
+
+userentry.grid(row=0,column=1)
+passentry.grid(row=1,column=1)
 
 root.mainloop()
