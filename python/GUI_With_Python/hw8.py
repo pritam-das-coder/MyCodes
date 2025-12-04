@@ -29,8 +29,11 @@ for file in files_list:
         text_file=open(full_text_path,"r")
         tk_text=text_file.read()
 
-        label=Label(image=tk_img,text=tk_text,compound="top",width=250,height=900)
-        label.pack(side="left",padx=20)
+        f=Frame(root)
+        f.pack(side="left")
+
+        label=Label(f,image=tk_img,text=tk_text,compound="top")
+        label.pack(padx=20)
 
 
 
