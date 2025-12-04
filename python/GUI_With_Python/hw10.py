@@ -27,7 +27,7 @@ b2.pack(side="left",padx=10)
 b3=Button(f,text="Year",command=year,borderwidth=5)
 b3.pack(side="left",padx=10)
 
-b4=Button(f,text="Hobby",command=hobby)
+b4=Button(f,text="Hobby",command=hobby,borderwidth=5)
 b4.pack(side="left",padx=10)
 
 root.mainloop()
