@@ -9,7 +9,7 @@ f1.pack(side="left", fill=Y)
 f2=Frame(root,bg="grey",borderwidth=8,relief=SUNKEN)
 f2.pack(side="top",fill=X)
 
-l1=Label(f1, text="Project")
+l1=Label(f1, text="Project Hi \nHello")
 l1.pack(pady=150)
 
 l2=Label(f2,text="Welcome")
