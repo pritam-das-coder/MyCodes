@@ -6,9 +6,9 @@ def fun():
 root = Tk()
 root.geometry("600x300")
 
-Label(root,text="Portal").grid(row=0,)
+Label(root,text="Portal",font="Arial 15 bold").grid(row=0,pady=10)
 
-username = Label(root,text="Username :")
+username = Label(root,text="Username :",font="Arial 10")
 password = Label(root,text="Password :")
 
 username.grid(row=1,column=0)
@@ -25,4 +25,4 @@ password_entry.grid(row=2,column=1)
 
 Button(root,text="Submit",borderwidth=6,bg="green",command=fun,relief="sunken").grid(row=3,column=1)
 
-root.mainloop(
+root.mainloop()
