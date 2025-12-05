@@ -48,6 +48,6 @@ paymentmodeentry.grid(row=5,column=1)
 check=Checkbutton(text="Want to prebook your meals?",variable=foodservicevalue)
 check.grid(row=6,column=1)
 
-Button(text="Submit to Pritam Travels",command=getvals).grid(row=7,column=1)
+Button(text="Submit to Pritam Travels",command=getvals,borderwidth=6).grid(row=7,column=1)
 
 root.mainloop()
