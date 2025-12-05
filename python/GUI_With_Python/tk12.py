@@ -2,7 +2,7 @@ from tkinter import *
 
 root=Tk()
 root.geometry("600x300")
-Label(root,text="Welcome to Pritam Travels",font="comicsansms 15 bold").grid(row=0,column=3)
+Label(root,text="Welcome to Pritam Travels",font="comicsansms 15 bold",pady=15).grid(row=0,column=3)
 
 name=Label(root,text="Name")
 phone=Label(root,text="Phone")
@@ -15,5 +15,25 @@ phone.grid(row=2,column=0)
 gender.grid(row=3,column=0)
 emergency.grid(row=4,column=0)
 paymentmode.grid(row=5,column=0)
+
+namevalue=StringVar()
+phonevalue=StringVar()
+gendervalue=StringVar()
+emergencyvalue=StringVar()
+paymentmodevalue=StringVar()
+foodservicevalue=IntVar()
+
+nameentry=Entry(root,textvariable=namevalue)
+phoneentry=Entry(root,textvariable=phonevalue)
+genderentry=Entry(root,textvariable=gendervalue)
+emergencyentry=Entry(root,textvariable=emergencyvalue)
+paymentmodeentry=Entry(root,textvariable=paymentmodevalue)
+
+nameentry.grid(row=1,column=1)
+phoneentry.grid(row=2,column=1)
+genderentry.grid(row=3,column=1)
+emergencyentry.grid(row=4,column=1)
+paymentmodeentry.grid(row=5,column=1)
+
 
 root.mainloop()
