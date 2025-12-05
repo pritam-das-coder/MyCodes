@@ -1,6 +1,12 @@
 from tkinter import *
 
 def getvals():
+    print(f"Name : {namevalue.get()}")
+    print(f"Name : {phonevalue.get()}")
+    print(f"Name : {gendervalue.get()}")
+    print(f"Name : {emergencyvalue.get()}")
+    print(f"Name : {paymentmodevalue.get()}")
+    print(f"Name : {foodservicevalue.get()}")
     
     print("It works!")
 
