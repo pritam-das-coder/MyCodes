@@ -35,5 +35,7 @@ genderentry.grid(row=3,column=1)
 emergencyentry.grid(row=4,column=1)
 paymentmodeentry.grid(row=5,column=1)
 
+check=Checkbutton(text="Want to prebook your meals?",variable=foodservicevalue)
+check.grid(row=6,column=1)
 
 root.mainloop()
