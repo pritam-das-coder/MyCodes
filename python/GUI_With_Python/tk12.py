@@ -1,5 +1,8 @@
 from tkinter import *
 
+def getvals():
+    print("It works!")
+
 root=Tk()
 root.geometry("600x300")
 Label(root,text="Welcome to Pritam Travels",font="comicsansms 15 bold",pady=15).grid(row=0,column=3)
@@ -37,5 +40,7 @@ paymentmodeentry.grid(row=5,column=1)
 
 check=Checkbutton(text="Want to prebook your meals?",variable=foodservicevalue)
 check.grid(row=6,column=1)
+
+Button(text="Submit to Pritam Travels",command=getvals).grid(row=7,column=1)
 
 root.mainloop()
