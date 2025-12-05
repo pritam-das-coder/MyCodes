@@ -2,11 +2,11 @@ from tkinter import *
 
 def getvals():
     print(f"Name : {namevalue.get()}")
-    print(f"Name : {phonevalue.get()}")
-    print(f"Name : {gendervalue.get()}")
-    print(f"Name : {emergencyvalue.get()}")
-    print(f"Name : {paymentmodevalue.get()}")
-    print(f"Name : {foodservicevalue.get()}")
+    print(f"Phone Number : {phonevalue.get()}")
+    print(f"Gender : {gendervalue.get()}")
+    print(f"Emergency Contact : {emergencyvalue.get()}")
+    print(f"Payment Mode : {paymentmodevalue.get()}")
+    print(f"Food Service : {foodservicevalue.get()}")
     
     print("It works!")
 
