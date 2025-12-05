@@ -12,7 +12,7 @@ def getvals():
 
 root=Tk()
 root.geometry("600x300")
-Label(root,text="Welcome to Pritam Travels",font="comicsansms 15 bold",pady=15).grid(row=0,column=1,columnspan=3)
+Label(root,text="Welcome to Pritam Travels",font="comicsansms 15 bold",pady=15).grid(row=0,column=1,columnspan=20)
 
 name=Label(root,text="Name :")
 phone=Label(root,text="Phone :")
