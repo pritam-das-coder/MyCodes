@@ -6,10 +6,10 @@ def fun():
 root = Tk()
 root.geometry("600x300")
 
-Label(root,text="Portal",font="Arial 15 bold").grid(row=0,pady=10)
+Label(root,text="Portal",font="Elephant 15 bold").grid(row=0,pady=10)
 
 username = Label(root,text="Username :",font="Arial 10")
-password = Label(root,text="Password :")
+password = Label(root,text="Password :",font="Arial 10")
 
 username.grid(row=1,column=0)
 password.grid(row=2,column=0)
