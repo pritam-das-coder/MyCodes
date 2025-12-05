@@ -17,7 +17,7 @@ password.grid(row=2,column=0)
 uservalue = StringVar()
 passvalue = StringVar()
 
-username_entry = Entry(root,textvariable=uservalue,borderwidth=5,relief="flat",highlightbackground="red",highlightcolor="blue",highlightthickness=5)
+username_entry = Entry(root,textvariable=uservalue,relief="flat",highlightbackground="red",highlightcolor="green",highlightthickness=2)
 password_entry = Entry(root,textvariable=passvalue)
 
 username_entry.grid(row=1,column=1)
