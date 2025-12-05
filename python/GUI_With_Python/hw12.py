@@ -17,11 +17,11 @@ password.grid(row=2,column=0)
 uservalue = StringVar()
 passvalue = StringVar()
 
-username_entry = Entry(root,textvariable=uservalue,relief="flat",highlightbackground="red",highlightcolor="green",highlightthickness=2)
-password_entry = Entry(root,textvariable=passvalue)
+username_entry = Entry(root,textvariable=uservalue,bg="light grey",relief="flat",highlightbackground="red",highlightcolor="green",highlightthickness=2)
+password_entry = Entry(root,textvariable=passvalue,bg="light grey",highlightbackground="red",highlightcolor="green",highlightthickness=2)
 
-username_entry.grid(row=1,column=1)
-password_entry.grid(row=2,column=1)
+username_entry.grid(row=1,column=1,pady=6)
+password_entry.grid(row=2,column=1,pady=6)
 
 Button(root,text="Submit",borderwidth=6,bg="green",command=fun,relief="sunken").grid(row=3,column=1)
 
