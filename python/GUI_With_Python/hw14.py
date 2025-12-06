@@ -1,5 +1,5 @@
 from tkinter import *
-
+from PIL import Image,ImageTk
 root=Tk()
 
 canvas_width=800
@@ -15,6 +15,9 @@ canvas_widget.pack()
 # base-line -> start -> extent
 # canvas_widget.create_arc(30,40,200,210,start=90,extent=270)
 
-canvas_widget.create_image()
+img = Image.open(r"C:\Users\daspr\OneDrive\Desktop\MyCodes\python\GUI_With_Python\2025.gif")
+img = img.resize((100,100))
+tk_img = ImageTk.PhotoImage(img)
+canvas_widget.create_image(60,60,image=tk_img)
 
 root.mainloop()
