@@ -11,7 +11,9 @@ root.title("Canvas Shapes")
 can_widget=Canvas(root,width=canvas_width,height=canvas_height)
 can_widget.pack()
 
-# line goes from the point x1, y1 to x2,y2
-can_widget.create_line(0,0,800,400)
+# line goes from the point x1, y1 to x2,y2 
+can_widget.create_line(0,0,800,400,fill="red") # (x1,y1,x2,y2)
+can_widget.create_line(800,0,0,400,fill="red")
+
 
 root.mainloop()
