@@ -1,11 +1,13 @@
 from tkinter import *
 
 def getvals():
+    with open(r"C:\Users\daspr\OneDrive\Desktop\MyCodes\python\GUI_With_Python\list.txt","a") as f:
+        f.write(f"{namevalue.get(),phonevalue.get(),gendervalue.get(),emergencyvalue.get(),paymentmodevalue.get(),foodservicevalue.get()}\n")
     print("It works!")
 
 root=Tk()
 root.geometry("600x300")
-Label(root,text="Welcome to Pritam Travels",font="comicsansms 15 bold",pady=15).grid(row=0,column=3)
+Label(root,text="Welcome to Pritam Travels",font="comicsansms 15 bold",pady=15).grid(row=0,column=1)
 
 name=Label(root,text="Name")
 phone=Label(root,text="Phone")
