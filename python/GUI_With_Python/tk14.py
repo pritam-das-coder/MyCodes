@@ -25,5 +25,6 @@ can_widget.pack()
 # for oval give end coordinates of main diagonal of a rectangle that fits oval see 'oval.png'
 # can_widget.create_oval(20,20,600,300,fill="green")
 # can_widget.create_oval(0,0,200,200)
-can_widget.create_rectangle(10,10,200,200)
+# can_widget.create_rectangle(10,10,200,200)
+can_widget.create_oval(10,10,200,200)
 root.mainloop()
