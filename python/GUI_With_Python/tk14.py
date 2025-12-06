@@ -21,5 +21,6 @@ can_widget.create_rectangle(10,10,600,200,fill="blue")
 # to write text give center coordinates of text
 can_widget.create_text(400,200,text="Hello Pritam!")
 
-can_widget.create_oval()
+
+can_widget.create_oval(20,20,600,300)
 root.mainloop()
