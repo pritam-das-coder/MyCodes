@@ -10,6 +10,6 @@ root.geometry(f"{canvas_width}x{canvas_height}")
 canvas_widget=Canvas(root,width=canvas_width,height=canvas_height)
 canvas_widget.pack()
 
-canvas_widget.create_arc()
+canvas_widget.create_arc(10,10,100,100)
 
 root.mainloop()
