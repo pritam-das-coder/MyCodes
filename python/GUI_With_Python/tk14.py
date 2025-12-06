@@ -18,5 +18,7 @@ can_widget.create_line(800,0,0,400,fill="red")
 # for rectangle give coordinates of top left and bottom right
 can_widget.create_rectangle(10,10,600,200,fill="blue")
 
-can_widget.create_text()
+# to write text give center coordinates of text
+can_widget.create_text(400,200,text="Hello Pritam!")
+
 root.mainloop()
