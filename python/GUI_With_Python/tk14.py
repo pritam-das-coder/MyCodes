@@ -22,6 +22,6 @@ can_widget.create_rectangle(10,10,600,200,fill="blue")
 can_widget.create_text(400,200,text="Hello Pritam!")
 
 # can_widget.create_rectangle(20,20,600,300)
-# for oval give end coordinates of main diagonal of a rectangle that fits oval
+# for oval give end coordinates of main diagonal of a rectangle that fits oval see oval
 can_widget.create_oval(20,20,600,300)
 root.mainloop()
