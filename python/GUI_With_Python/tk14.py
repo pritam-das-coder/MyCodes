@@ -1,0 +1,7 @@
+# Canvas Widget
+from tkinter import *
+
+root=Tk()
+
+root.geometry()
+root.mainloop()
