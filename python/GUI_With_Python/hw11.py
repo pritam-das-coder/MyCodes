@@ -1,11 +1,11 @@
 from tkinter import *
 
 def save():
-    record_file=open(r"G:\My Drive\MyCodes\python\GUI_With_Python\record.txt","a")
-    record_file.write(name.get()+"\t")
-    record_file.write(roll_no.get()+"\t")
-    record_file.write(dance_type.get()+"\t")
-    record_file.write("\n")
+    with open(r"G:\My Drive\MyCodes\python\GUI_With_Python\record.txt","a") as record_file:
+        record_file.write(name.get()+"\t")
+        record_file.write(roll_no.get()+"\t")
+        record_file.write(dance_type.get()+"\t")
+        record_file.write("\n")
     print("Your Form is submitted!")
 
 root=Tk()
