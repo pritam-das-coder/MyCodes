@@ -1,7 +1,7 @@
 from tkinter import *
 
 def fun(event):
-    print("You clicked on the button")
+    print(f"You clicked on the button at {event.x}, {event.y}")
 root=Tk()
 root.geometry("600x300")
 root.title("Learn Tkinter Events")
