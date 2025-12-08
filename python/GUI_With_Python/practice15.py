@@ -8,6 +8,7 @@ def copy(event):
     root.clipboard_append(wid_text)
 
     root.update()
+    
 def click(event):
     wid=event.widget
     wid.focus_set()
@@ -26,6 +27,5 @@ entry.pack()
 lb.bind('<Control-c>',copy)
 
 # lb.focus_set()
-# Tumi kotha deyechile Kota je harie gele
 
 root.mainloop()
