@@ -30,6 +30,6 @@ entry.pack()
 lb.bind('<Control-c>',copy)
 
 # lb.focus_set()
-lb.bind('<B1-Motion>',select)
+# lb.bind('<B1-Motion>',select)
 
 root.mainloop()
