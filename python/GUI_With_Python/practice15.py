@@ -8,10 +8,13 @@ def copy(event):
     root.clipboard_append(wid_text)
 
     root.update()
-    
+
 def click(event):
     wid=event.widget
     wid.focus_set()
+
+def select(event):
+    print('Hi')
 
 root=Tk()
 root.geometry("600x300")
@@ -27,5 +30,6 @@ entry.pack()
 lb.bind('<Control-c>',copy)
 
 # lb.focus_set()
+lb.bind('<B1-Motion>',select)
 
 root.mainloop()
