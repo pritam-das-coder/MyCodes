@@ -1,6 +1,6 @@
 from tkinter import *
 
-def fun():
+def fun(event):
     print("You clicked on the button")
 root=Tk()
 root.geometry("600x300")
