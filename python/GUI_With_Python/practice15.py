@@ -6,7 +6,9 @@ def hello(event):
     print("Hello")
 def bye(event):
     print("Bye")
-
+def copy(event):
+    widget_text=event.widget
+    
 root=Tk()
 root.geometry("600x300")
 root.title("Learn Tkinter Events")
