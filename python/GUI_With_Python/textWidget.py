@@ -4,7 +4,8 @@ root=Tk()
 root.geometry("600x300")
 root.title("Learn Tkinter Events")
 
-wid=Text(root,text="Hi ke tui")
+wid=Text(root)
+wid.insert("1.0","Hi hello bye")
 wid.pack()
 
 root.mainloop()
