@@ -6,8 +6,8 @@ def hello(event):
     print("Hello")
 def bye(event):
     print("Bye")
-# def copy(event):
-
+def copy(event):
+    print(widget.cget('text'))
 
 root=Tk()
 root.geometry("600x300")
@@ -21,6 +21,6 @@ widget.pack()
 # widget.bind('<Motion>',hello)
 # widget.bind("<Enter>",hello)
 # widget.bind("<Leave>",bye)
-# widget.bind('<<Copy>>',widget.cget('text'))
+widget.bind('<<Copy>>',copy)
 
 root.mainloop()
