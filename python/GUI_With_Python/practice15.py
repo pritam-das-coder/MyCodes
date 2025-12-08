@@ -22,4 +22,5 @@ lb.bind('<Control-c>',copy)
 
 lb.focus_set()
 # Tumi kotha deyechile Kota je harie gele
+
 root.mainloop()
