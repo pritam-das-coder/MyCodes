@@ -9,14 +9,7 @@ root.title("Learn Menus & Submenus")
 
 mainmenu = Menu(root)
 root.config(menu=mainmenu)
-
-# m1 = Menu(mainmenu)
-# m1.add_command(label="New project",command=fun)
-# m1.add_command(label="Save",command=fun)
-# m1.add_command(label="Save As",command=fun)
-# m1.add_command(label="Print",command=fun)
-
-# mainmenu.add_cascade(label="File",menu=m1)
-mainmenu.add_cascade(label="File",command=fun)
+mainmenu.add_command(label="File",command=fun)
+mainmenu.add_command(label="Exit",command=quit)
 
 root.mainloop()
