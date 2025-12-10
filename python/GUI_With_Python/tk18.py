@@ -36,6 +36,4 @@ mainmenu.add_cascade(label="Edit",menu=m2) # submenu add
 
 mainmenu.add_command(label="Exit",command=quit)
 
-# m1.add_cascade(label="Share",menu=m2)
-
 root.mainloop()
