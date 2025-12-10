@@ -16,9 +16,10 @@ root.title("Learn Menus & Submenus")
 mainmenu = Menu(root)
 root.config(menu=mainmenu)
 
-m1 = Menu(mainmenu)
+m1 = Menu(mainmenu,tearoff=0)
 m1.add_command(label="New Text File",command=fun)
 m1.add_command(label="New Window",command=fun)
+m1.add_separator()
 m1.add_command(label="Open File",command=fun)
 m1.add_command(label="Save",command=fun)
 
