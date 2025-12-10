@@ -22,7 +22,7 @@ m1.add_command(label="New Window",command=fun)
 m1.add_command(label="Open File",command=fun)
 m1.add_command(label="Save",command=fun)
 
-mainmenu.add_cascade(label="File",menu=m1)
+mainmenu.add_cascade(label="File",menu=m1) # submenu add
 
 
 root.mainloop()
