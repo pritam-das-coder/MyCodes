@@ -25,5 +25,15 @@ m1.add_command(label="Save",command=fun)
 
 mainmenu.add_cascade(label="File",menu=m1) # submenu add
 
+m2 = Menu(mainmenu,tearoff=0)
+m2.add_command(label="Undo",command=fun)
+m2.add_command(label="Cut",command=fun)
+m2.add_separator()
+m2.add_command(label="Find",command=fun)
+m2.add_command(label="Paste",command=fun)
+
+mainmenu.add_cascade(label="Edit",menu=m2) # submenu add
+
+mainmenu.add_command(label="Exit",command=quit)
 
 root.mainloop()
