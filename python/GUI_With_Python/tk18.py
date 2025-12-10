@@ -17,8 +17,12 @@ mainmenu = Menu(root)
 root.config(menu=mainmenu)
 
 m1 = Menu(mainmenu)
-m1.add_command(label="New Text File")
+m1.add_command(label="New Text File",command=fun)
+m1.add_command(label="New Window",command=fun)
+m1.add_command(label="Open File",command=fun)
+m1.add_command(label="Save",command=fun)
 
+mainmenu.add_cascade(label="File",menu=m1)
 
 
 root.mainloop()
