@@ -32,7 +32,7 @@ def test():
     # print(a)
     # a=tmsg.showerror("Message","Error Occured")
     # print(a)
-    a=tmsg.showwarning("Warning","Don't do this")
+    a=tmsg.showwarning("Warning","Don't do this",detail="heavy")
     print(a)
     
 
