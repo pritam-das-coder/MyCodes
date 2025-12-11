@@ -27,6 +27,7 @@ def trouble_solver():
         trouble_solver()
     else:
         print("Hope your issue is solved")
+        return
 
 def test():
     # a=tmsg.askyesnocancel("Check","Are you happy?")
