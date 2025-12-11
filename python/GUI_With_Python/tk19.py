@@ -19,6 +19,10 @@ def rate():
         msg="Tell us how we can improve.\n We will contact you soon."
     tmsg.showinfo("Feedback",msg)
 
+def trouble_solver():
+    ans = tmsg.askretrycancel("")
+
+
 root=Tk()
 root.geometry("700x350")
 
@@ -35,6 +39,6 @@ mainmenu.add_cascade(label="File",menu=m1)
 m2 = Menu(mainmenu,tearoff=0)
 m2.add_command(label="Help",command=help)
 m2.add_command(label="Rate us",command=rate)
-
+m2.add_command(label="Troubleshoot Issue",command=trouble_solver)
 mainmenu.add_cascade(label="Help",menu=m2)
 root.mainloop()
