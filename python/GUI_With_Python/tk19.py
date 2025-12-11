@@ -27,8 +27,6 @@ def trouble_solver():
     else:
         print("Hope your issue is solved")
 
-
-
 root=Tk()
 root.geometry("700x350")
 
