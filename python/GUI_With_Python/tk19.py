@@ -27,6 +27,9 @@ def trouble_solver():
     else:
         print("Hope your issue is solved")
 
+def test():
+    tmsg.askyesnocancel("Holi","Pink")
+    
 root=Tk()
 root.geometry("700x350")
 
@@ -44,5 +47,7 @@ m2 = Menu(mainmenu,tearoff=0)
 m2.add_command(label="Help",command=help)
 m2.add_command(label="Rate us",command=rate)
 m2.add_command(label="Troubleshoot Issue",command=trouble_solver)
+m2.add_command(label="Test",command=test)
+
 mainmenu.add_cascade(label="Help",menu=m2)
 root.mainloop()
