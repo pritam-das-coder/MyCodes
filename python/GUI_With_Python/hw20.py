@@ -1,5 +1,11 @@
 from tkinter import *
 
+def add():
+    with open(r"C:\Users\daspr\OneDrive\Desktop\MyCodes\python\GUI_With_Python\rating.txt","w") as f:
+        f.write(str(slider.get())+"\n")
+    print("Thank you for giving your rating.")
+
+
 root=Tk()
 root.geometry("700x400")
 root.title("Restaurant Feedback")
@@ -9,6 +15,6 @@ Label(root,text="Thank you for coming to our restaurant.\nPlease give us a ratin
 slider = Scale(root,from_=0,to=10,orient="horizontal")
 slider.pack()
 
-Button(root,text="Submit",relief="raised",borderwidth=5).pack(pady=10)
+Button(root,text="Submit",relief="raised",borderwidth=5,command=add).pack(pady=10)
 
 root.mainloop()
