@@ -12,7 +12,7 @@ root.title("Restaurant Feedback")
 
 Label(root,text="Thank you for coming to our restaurant.\nPlease give us a rating.").pack()
 
-slider = Scale(root,from_=0,to=10,orient="horizontal",tickinterval=2)
+slider = Scale(root,from_=0,to=10,orient="horizontal",tickinterval=2,length=150,borderwidth=5,relief="raised")
 slider.pack()
 
 Button(root,text="Submit",relief="raised",borderwidth=5,command=add).pack(pady=10)
