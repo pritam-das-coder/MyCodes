@@ -23,7 +23,8 @@ def trouble_solver():
     ans = tmsg.askretrycancel("Troubleshoot","Sorry the server is down.")
     #print(ans)
     if ans:
-        print("Try again later")
+        #print("Try again later")
+        trouble_solver()
     else:
         print("Hope your issue is solved")
 
