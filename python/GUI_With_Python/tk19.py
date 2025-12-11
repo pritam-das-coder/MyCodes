@@ -14,9 +14,10 @@ def rate():
     ans=tmsg.askquestion("Was your experience good?","You used this GUI...Was your experience good?")
     # print(ans)
     if ans=="yes":
-        tmsg.showinfo("Feedback","Please rate us on playstore")
+        msg="Please rate us on playstore"
     else:
-        tmsg.showinfo("Feedback","Tell us how we can improve.\n We will contact you soon")
+        msg="Tell us how we can improve.\n We will contact you soon."
+    tmsg.showinfo("Feedback",msg)
 
 root=Tk()
 root.geometry("700x350")
