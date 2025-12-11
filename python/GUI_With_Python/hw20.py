@@ -3,7 +3,7 @@ import tkinter.messagebox as tmsg
 
 def add():
     if slider.get()<=3:
-        tmsg.showinfo("Apology Message","Sorry we can't satify you we will try to improve ourselves")
+        tmsg.showinfo("Apology Message","Sorry we can't satify you. We will try to improve ourselves.")
 
     with open(r"C:\Users\daspr\OneDrive\Desktop\MyCodes\python\GUI_With_Python\rating.txt","a") as f:
         f.write(str(slider.get())+"\n")
