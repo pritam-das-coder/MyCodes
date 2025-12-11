@@ -14,6 +14,7 @@ Label(root,text="Thank you for coming to our restaurant.\nPlease give us a ratin
 
 slider = Scale(root,from_=0,to=10,orient="horizontal",tickinterval=2,length=150)
 slider.pack()
+slider.set(10)
 
 Button(root,text="Submit",relief="raised",borderwidth=5,command=add).pack(pady=10)
 
