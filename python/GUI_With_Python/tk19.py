@@ -28,7 +28,8 @@ def trouble_solver():
         print("Hope your issue is solved")
 
 def test():
-    tmsg.CANCEL="hi"
+    #tmsg.CANCEL="hi"
+    
     a=tmsg.askyesnocancel("Check","Are you happy?")
     print(a)
     # a=tmsg.showerror("Message","Error Occured")
