@@ -28,10 +28,12 @@ def trouble_solver():
         print("Hope your issue is solved")
 
 def test():
-    # a=tmsg.askyesnocancel("Check","Are you happy?")
-    # print(a)
-    a=tmsg.showerror("Hi","hello")
+    tmsg.CANCEL="hi"
+    a=tmsg.askyesnocancel("Check","Are you happy?")
     print(a)
+    # a=tmsg.showerror("Message","Error Occured")
+    # print(a)
+    
 
 root=Tk()
 root.geometry("700x350")
