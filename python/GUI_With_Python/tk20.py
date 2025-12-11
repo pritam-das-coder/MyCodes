@@ -15,6 +15,7 @@ Label(root,text="How many dollars do you want?").pack()
 
 myslider = Scale(root,from_=0,to=100,orient=HORIZONTAL,tickinterval=25,length=200)
 myslider.pack()
+myslider.set(30)
 
 Button(root,text="Get Dollars!",relief="raised",borderwidth=4,command=get_dollar).pack(pady=10)
 
