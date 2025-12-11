@@ -11,7 +11,8 @@ def help():
 
 def rate():
     print("Rate us")
-    tmsg.askquestion("How was your experience?","How was your experience?")
+    a=tmsg.askquestion("Was your experience good?","You used this GUI...Was your experience good?")
+    print(a)
     
 root=Tk()
 root.geometry("700x350")
