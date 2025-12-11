@@ -1,5 +1,8 @@
 from tkinter import *
 
+def get_dollar():
+    print(f"We have credited {myslider.get()} dollars to your bank account")
+
 root=Tk()
 root.geometry("700x400")
 root.title("Learn Slider")
@@ -11,6 +14,6 @@ Label(root,text="How many dollars do you want?").pack()
 myslider = Scale(root,from_=0,to=100,orient=HORIZONTAL)
 myslider.pack()
 
-Button(root,text="Get Dollars!",relief=SUNKEN).pack(pady=10)
+Button(root,text="Get Dollars!",relief="raised",borderwidth=4,command=get_dollar).pack(pady=10)
 
 root.mainloop()
