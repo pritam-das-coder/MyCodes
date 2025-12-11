@@ -13,7 +13,7 @@ root.title("Learn Slider")
 # myslider.pack()
 Label(root,text="How many dollars do you want?").pack()
 
-myslider = Scale(root,from_=0,to=100,orient=HORIZONTAL,tickinterval=25,length=200)
+myslider = Scale(root,from_=0,to=100,orient=HORIZONTAL,tickinterval=25,length=200,troughcolor="red")
 myslider.pack()
 myslider.set(30)
 
