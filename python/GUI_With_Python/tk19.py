@@ -28,8 +28,9 @@ def trouble_solver():
         print("Hope your issue is solved")
 
 def test():
-    tmsg.askyesnocancel("Holi","Pink")
-    
+    a=tmsg.askyesnocancel("Check","Are you happy?")
+    print(a)
+
 root=Tk()
 root.geometry("700x350")
 
