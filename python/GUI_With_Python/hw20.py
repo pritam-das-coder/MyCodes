@@ -1,7 +1,7 @@
 from tkinter import *
 
 def add():
-    with open(r"C:\Users\daspr\OneDrive\Desktop\MyCodes\python\GUI_With_Python\rating.txt","w") as f:
+    with open(r"C:\Users\daspr\OneDrive\Desktop\MyCodes\python\GUI_With_Python\rating.txt","a") as f:
         f.write(str(slider.get())+"\n")
     print("Thank you for giving your rating.")
 
