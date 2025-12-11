@@ -21,7 +21,11 @@ def rate():
 
 def trouble_solver():
     ans = tmsg.askretrycancel("Troubleshoot","Sorry the server is down.")
-    print(ans)
+    #print(ans)
+    if ans:
+        print("Try again later")
+    else:
+        print("Hope your issue is solved")
 
 
 
