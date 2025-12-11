@@ -20,7 +20,9 @@ def rate():
     tmsg.showinfo("Feedback",msg)
 
 def trouble_solver():
-    ans = tmsg.askretrycancel("")
+    ans = tmsg.askretrycancel("Troubleshoot","Sorry the server is down.")
+    print(ans)
+
 
 
 root=Tk()
