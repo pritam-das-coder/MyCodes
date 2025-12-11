@@ -16,4 +16,6 @@ m1.add_command(label="Copy",command=fun)
 
 mainmenu.add_cascade(label="File",menu=m1)
 
+m2 = Menu(mainmenu,tearoff=0)
+m2.add_command()
 root.mainloop()
