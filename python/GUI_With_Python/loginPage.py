@@ -13,5 +13,5 @@ Label(f0,text="Password").place(relx=0.2,rely=0.6,anchor="center")
 passvalue=StringVar()
 uservalue=StringVar()
 
-Entry(f0,textvariable=uservalue).place(relx=0.2,rely=)
+Entry(f0,textvariable=uservalue).place(relx=0.4,rely=0.3,anchor="center")
 root.mainloop()
