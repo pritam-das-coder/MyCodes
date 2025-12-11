@@ -6,6 +6,8 @@ def fun():
 
 def help():
     print("I will help you")
+    a=tmsg.showinfo("Help","Pritam will help you")
+
 
 root=Tk()
 root.geometry("700x350")
