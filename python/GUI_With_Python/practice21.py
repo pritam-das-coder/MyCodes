@@ -19,14 +19,14 @@ def order():
 root=Tk()
 root.geometry("400x250")
 root.title("Learn Radiobutton")
-root.minsize(400,250)
-root.maxsize(400,250)
+# root.minsize(400,250)
+# root.maxsize(400,250)
 
-# wid=Canvas(root)
-# wid.pack()
-# wid.create_line()
+wid=Canvas(root)
+wid.pack()
+wid.create_line(10,10,5,10)
 
-Label(root,text="What would you like to have sir?",font="lucida 19 bold",padx=14,underline=10).pack()
+Label(root,text="What would you like to have sir?",font="lucida 19 bold",padx=14).pack()
 
 food_list=["Dosa","Idly","Roti","Fish","Fried Rice"]
 var_list=[]
