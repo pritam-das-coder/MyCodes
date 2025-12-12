@@ -2,14 +2,19 @@ from tkinter import *
 import tkinter.messagebox as tmsg
 
 def order():
-    tmsg.showinfo("Order Received",f"Your order for {var.get()} has been taken. Thanks for ordering.")
+    order=var.get()
+    if order=="Food":
+        msg="Please select your order."
+    else:
+        msg=f"Your order for {order} has been taken. Thanks for ordering."
+    tmsg.showinfo("Order Received",msg)
 
 
 root=Tk()
-root.geometry("700x400")
+root.geometry("400x250")
 root.title("Learn Radiobutton")
 
-Label(root,text="What would you like to have sir?",font="lucida 19 bold",justify="left",padx=14).pack()
+Label(root,text="What would you like to have sir?",font="lucida 19 bold",padx=14).pack()
 
 # var=IntVar()
 var = StringVar()
