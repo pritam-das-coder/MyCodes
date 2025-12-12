@@ -22,6 +22,10 @@ root.title("Learn Radiobutton")
 root.minsize(400,250)
 root.maxsize(400,250)
 
+wid=Canvas(root)
+root.pack()
+
+
 Label(root,text="What would you like to have sir?",font="lucida 19 bold",padx=14).pack()
 
 food_list=["Dosa","Idly","Roti","Fish","Fried Rice"]
