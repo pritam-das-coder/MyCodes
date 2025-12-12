@@ -24,12 +24,12 @@ var.set("Food")
 # var.set(1)
 # print(var.get())
 food_list=["Dosa","Idly","Roti","Fish","Fried Rice"]
-# Radiobutton(root,text="Dosa",variable=var,value="dosa",padx=14).pack(anchor="w")
-# Radiobutton(root,text="Idly",variable=var,value="idly",padx=14).pack(anchor="w")
-# Radiobutton(root,text="Roti",variable=var,value="roti",padx=14).pack(anchor="w")
-# Radiobutton(root,text="Fish",variable=var,value="fish",padx=14).pack(anchor="w")
-for i in range(len(food_list)):
-    Radiobutton(root,text=food_list[i],variable=var,value=food_list[i]).pack(anchor="w")
+Radiobutton(root,text="Dosa",variable=var,value="dosa",padx=14).pack(anchor="w")
+Radiobutton(root,text="Idly",variable=var,value="idly",padx=14).pack(anchor="w")
+Radiobutton(root,text="Roti",variable=var,value="roti",padx=14).pack(anchor="w")
+Radiobutton(root,text="Fish",variable=var,value="fish",padx=14).pack(anchor="w")
+# for i in range(len(food_list)):
+#     Radiobutton(root,text=food_list[i],variable=var,value=food_list[i]).pack(anchor="w")
 # print(var.get())
 Button(root,text="Order Now",borderwidth=5,relief="raised",command=order).pack()
 # print(var.get())
