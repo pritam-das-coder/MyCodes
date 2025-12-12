@@ -6,7 +6,7 @@ def order():
     order2=var2.get()
     order3=var3.get()
     order4=var4.get()
-    if order1=="" and order2=="" and order3=="" and order4=="":
+    if order1=="1" and order2=="1" and order3=="1" and order4=="1":
         msg="Please select your order."
     else:
         msg=f"Your order for {order1}{order2}{order3}{order4} has been taken. Thanks for ordering."
@@ -26,10 +26,10 @@ var1 = StringVar()
 var2 = StringVar()
 var3 = StringVar()
 var4 = StringVar()
-var1.set("")
-var2.set("")
-var3.set("")
-var4.set("")
+var1.set("1")
+var2.set("1")
+var3.set("1")
+var4.set("1")
 # var.set(1)
 # print(var.get())
 food_list=["Dosa","Idly","Roti","Fish","Fried Rice"]
