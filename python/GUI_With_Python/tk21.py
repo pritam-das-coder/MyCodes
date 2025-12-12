@@ -2,11 +2,14 @@ from tkinter import *
 import tkinter.messagebox as tmsg
 
 def order():
-    order=var.get()
-    if order=="":
+    order1=var1.get()
+    order2=var2.get()
+    order3=var3.get()
+    order4=var4.get()
+    if order1=="" and order2=="" and order3=="" and order4=="":
         msg="Please select your order."
     else:
-        msg=f"Your order for {order} has been taken. Thanks for ordering."
+        msg=f"Your order for {order1}{order2}{order3}{order4} has been taken. Thanks for ordering."
     tmsg.showinfo("Order Received",msg)
 
 
