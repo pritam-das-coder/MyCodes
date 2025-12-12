@@ -11,7 +11,7 @@ def order():
     if order_items=="":
         msg="Please select your order."
     else:
-        msg=f"Your order for {order_items}has been taken. Thanks for ordering."
+        msg=f"Your order for {order_items} has been taken. Thanks for ordering."
 
     tmsg.showinfo("Order Received",msg)
 
