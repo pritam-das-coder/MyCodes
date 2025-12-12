@@ -18,7 +18,7 @@ def order():
 
 root=Tk()
 root.geometry("400x250")
-root.title("Learn Radiobutton")
+root.title("Make your order")
 root.minsize(400,250)
 root.maxsize(400,250)
 
