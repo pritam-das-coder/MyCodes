@@ -9,7 +9,7 @@ root=Tk()
 root.geometry("700x400")
 root.title("Learn Radiobutton")
 
-Label(root,text="What would you like to have sir?",font="lucida 19 bold",bg="red").pack(fill="x")
+Label(root,text="What would you like to have sir?",font="lucida 19 bold",bg="red",width=28).pack()
 
 # var=IntVar()
 var = StringVar()
