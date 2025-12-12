@@ -2,15 +2,17 @@ from tkinter import *
 import tkinter.messagebox as tmsg
 
 def order():
-    order_list=[]
+    order_items=""
     for i in range(len(var_list)):
         item=var_list[i].get()
-        order_list.append(item)
+        if item!="Food":
+            order_items+=item+" "
 
-    if order1=="1" and order2=="1" and order3=="1" and order4=="1":
+    if order_items=="":
         msg="Please select your order."
     else:
-        msg=f"Your order for {order1}{order2}{order3}{order4} has been taken. Thanks for ordering."
+        msg=f"Your order for {order_items}has been taken. Thanks for ordering."
+
     tmsg.showinfo("Order Received",msg)
 
 
