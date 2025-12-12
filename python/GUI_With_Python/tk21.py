@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter.messagebox as tmsg
 
 def order():
-    tmsg.showinfo("Restaurant Order",f"Your order for {var.get()} has been taken.")
+    tmsg.showinfo("Order Received",f"Your order for {var.get()} has been taken. Thanks for ordering.")
 
 
 root=Tk()
@@ -21,6 +21,6 @@ Radiobutton(root,text="Idly",variable=var,value="idly").pack()
 Radiobutton(root,text="Roti",variable=var,value="roti").pack()
 Radiobutton(root,text="Fish",variable=var,value="fish").pack()
 # print(var.get())
-Button(root,text="Submit",borderwidth=5,relief="raised",command=order).pack()
+Button(root,text="Order Now",borderwidth=5,relief="raised",command=order).pack()
 # print(var.get())
 root.mainloop()
