@@ -2,10 +2,11 @@ from tkinter import *
 import tkinter.messagebox as tmsg
 
 def order():
-    order1=var1.get()
-    order2=var2.get()
-    order3=var3.get()
-    order4=var4.get()
+    order_list=[]
+    for i in range(len(var_list)):
+        item=var_list[i].get()
+        order_list.append(item)
+
     if order1=="1" and order2=="1" and order3=="1" and order4=="1":
         msg="Please select your order."
     else:
@@ -25,6 +26,7 @@ food_list=["Dosa","Idly","Roti","Fish","Fried Rice"]
 var_list=[]
 for i in range(len(food_list)):
     v=StringVar()
+    v.set("Food")
     var_list.append(v)
 
 for i in range(len(food_list)):
