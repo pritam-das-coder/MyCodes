@@ -7,7 +7,7 @@ def order():
         item=var_list[i].get()
         if item!="Food":
             order_items+=item+", "
-    order_items.removesuffix("")
+    order_items=order_items.removesuffix(", ")
     if order_items=="":
         msg="Please select your order."
     else:
