@@ -34,6 +34,10 @@ var4.set("1")
 # print(var.get())
 food_list=["Dosa","Idly","Roti","Fish","Fried Rice"]
 var_list=[]
+for i in range(len(food_list)):
+    v=StringVar()
+    var_list.append(v)
+
 # Radiobutton(root,text="Dosa",variable=var1,value="dosa",padx=14).pack(anchor="w")
 # Radiobutton(root,text="Idly",variable=var2,value="idly",padx=14).pack(anchor="w")
 # Radiobutton(root,text="Roti",variable=var3,value="roti",padx=14).pack(anchor="w")
