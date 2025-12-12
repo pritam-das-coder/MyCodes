@@ -8,6 +8,6 @@ Label(root,text="What would you like to have sir?",font="lucida 19 bold").pack()
 
 var=IntVar()
 
-Radiobutton(root,text="Dosa",variable=var,value=1).pack()
+Radiobutton(root,text="Dosa",variable=var,value=1).pack(anchor="w")
 
 root.mainloop()
