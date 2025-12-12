@@ -19,13 +19,13 @@ def order():
 root=Tk()
 root.geometry("400x250")
 root.title("Learn Radiobutton")
-# root.minsize(400,250)
-# root.maxsize(400,250)
+root.minsize(400,250)
+root.maxsize(400,250)
 
 
 Label(root,text="What would you like to have sir?",font="lucida 19 bold",padx=14).pack()
 
-wid=Canvas(root,height=10)
+wid=Canvas(root,height=10) # mention height
 wid.pack()
 wid.create_line(0,5,400,5)
 
