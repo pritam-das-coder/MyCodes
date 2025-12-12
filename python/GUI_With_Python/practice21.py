@@ -25,7 +25,7 @@ root.title("Learn Radiobutton")
 
 Label(root,text="What would you like to have sir?",font="lucida 19 bold",padx=14).pack()
 
-wid=Canvas(root)
+wid=Canvas(root,height=10)
 wid.pack()
 wid.create_line(0,5,400,5)
 
