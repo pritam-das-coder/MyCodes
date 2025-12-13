@@ -15,8 +15,9 @@ sb.pack(fill="x",side="bottom")
 
 # lbx = Listbox(root,yscrollcommand=sb.set)
 lbx=Listbox(root,xscrollcommand=sb.set)
-for i in range(344):
-    lbx.insert(END,f"Item : {i}")
+# for i in range(344):
+#     lbx.insert(END,f"Item : {i}")
+lbx.insert(END,f"This is a very very very very very very very long line that needs scrolling...")
 lbx.pack(fill="both",padx=22)
 
 # sb.config(command=lbx.yview)
