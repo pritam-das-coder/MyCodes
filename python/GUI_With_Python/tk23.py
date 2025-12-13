@@ -14,7 +14,7 @@ sb.pack(fill=Y,side="right")
 lbx = Listbox(root,yscrollcommand=sb.set)
 for i in range(344):
     lbx.insert(END,f"Item : {i}")
-lbx.pack(fill="both")
+lbx.pack(fill="both",padx=22)
 
 sb.config(command=lbx.yview)
 
