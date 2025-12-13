@@ -11,7 +11,7 @@ sb2.pack(side="bottom",fill="x")
 
 text = Text(root,yscrollcommand=sb1.set)
 text.pack(fill="both",expand=True)
-text.insert(1,0,"")
+text.insert("1.0","Hello")
 
 sb1.config(command=text.yview)
 sb2.config(command=text.xview)
