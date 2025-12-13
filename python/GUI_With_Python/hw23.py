@@ -5,7 +5,7 @@ root.geometry("600x350")
 root.title("")
 
 sb=Scrollbar(root)
-sb.pack()
+sb.pack(side="right",fill="y")
 
 text = Text(root,yscrollcommand=sb.set)
 text.pack(fill="both",expand=True)
