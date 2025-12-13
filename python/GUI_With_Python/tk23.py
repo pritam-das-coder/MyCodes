@@ -23,7 +23,9 @@ sb.pack(fill=Y,side="right")
 # sb.config(command=lbx.yview)
 # sb.config(command=lbx.xview)
 
-txt = Text(root)
+txt = Text(root,yscrollcommand=sb.set)
 txt.pack()
+
+sb.config(command=txt.yview)
 
 root.mainloop()
