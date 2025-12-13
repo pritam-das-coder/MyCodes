@@ -24,6 +24,6 @@ sb.pack(fill=Y,side="right")
 # sb.config(command=lbx.xview)
 
 txt = Text(root)
-
+txt.pack()
 
 root.mainloop()
