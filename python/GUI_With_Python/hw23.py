@@ -7,7 +7,9 @@ root.title("")
 sb=Scrollbar(root)
 sb.pack()
 
-Label(root,text="").pack()
+text = Text(root,yscrollcommand=sb.set)
+text.pack(fill="both",expand=True)
 
+sb.config(command=text.yview)
 
 root.mainloop()
