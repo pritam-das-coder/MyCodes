@@ -11,4 +11,8 @@ root.title("Learn Scrollbar")
 sb=Scrollbar(root)
 sb.pack()
 
+lbx = Listbox(root)
+for i in range(344):
+    lbx.insert(END,f"Item : {i}")
+
 root.mainloop()
