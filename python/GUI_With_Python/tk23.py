@@ -8,12 +8,12 @@ root.title("Learn Scrollbar")
 # 1. widget(yscrollcommand = scrollbar.set)
 # 2. scrollbar.config(command = widget.yview)
 
-# sb=Scrollbar(root)
-# sb.pack()
+sb=Scrollbar(root)
+sb.pack(fill=Y)
 
-lbx = Listbox(root)
-for i in range(344):
-    lbx.insert(END,f"Item : {i}")
-lbx.pack()
+# lbx = Listbox(root)
+# for i in range(344):
+#     lbx.insert(END,f"Item : {i}")
+# lbx.pack()
 
 root.mainloop()
