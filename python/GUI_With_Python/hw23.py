@@ -2,7 +2,7 @@ from tkinter import *
 
 root=Tk()
 root.geometry("600x350")
-root.title("")
+root.title("My Text Editor")
 
 sb=Scrollbar(root)
 sb.pack(side="right",fill="y")
