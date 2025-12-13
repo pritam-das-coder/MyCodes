@@ -11,11 +11,11 @@ root.title("Learn Scrollbar")
 sb=Scrollbar(root)
 sb.pack(fill=Y,side="right")
 
-lbx = Listbox(root,xscrollcommand=sb.set)
+lbx = Listbox(root,yscrollcommand=sb.set)
 for i in range(344):
     lbx.insert(END,f"Item : {i}")
 lbx.pack(fill="both",padx=22)
 
-sb.config(command=lbx.xview)
+sb.config(command=lbx.yview)
 
 root.mainloop()
