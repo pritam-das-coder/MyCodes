@@ -9,7 +9,7 @@ root.title("Learn Scrollbar")
 # 2. scrollbar.config(command = widget.yview)
 
 sb=Scrollbar(root)
-sb.pack(fill=Y)
+sb.pack(fill=Y,side="right")
 
 lbx = Listbox(root,yscrollcommand=sb.set)
 for i in range(344):
