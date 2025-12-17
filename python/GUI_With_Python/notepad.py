@@ -122,6 +122,6 @@ scroll.config(command=body.yview)
 statusBar=Frame(body)
 statusBar.pack(side="bottom",fill="x")
 
-Label(statusBar,text="Hi").pack()
+Label(statusBar,text="Plain Text").pack()
 
 root.mainloop()
