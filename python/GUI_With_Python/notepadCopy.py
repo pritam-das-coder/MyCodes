@@ -1,22 +1,25 @@
 from tkinter import *
+import tkinter.messagebox as tmsg
+def newFile():
+    pass
 
-def changeFont():
-    root1=Tk()
-    root1.geometry("200x50")
-    font=StringVar()
-    size=StringVar()
-    f0=Frame(root1)
-    f0.pack()
-    Label(f0,text="Enter the font name : ").pack(side="left")
-    Entry(f0,textvariable=font).pack()
-    f1=Frame(root1)
-    f1.pack()
-    Label(f1,text="Enter the font name : ").pack(side="left")
-    Entry(f1,textvariable=size).pack()
+def openFile():
+    pass
 
-    body.config(font=f"{font.get()} {size.get()}")
-    root.update()
+def saveFile():
+    pass
 
+def cut():
+    pass
+
+def copy():
+    pass
+
+def paste():
+    pass
+
+def help():
+    tmsg.showinfo("")
 root=Tk()
 root.geometry("600x450")
 root.title("Untitled - Notepad")
@@ -35,9 +38,9 @@ m1.add_command(label="Exit",command=root.destroy)
 mainmenu.add_cascade(label="File",menu=m1)
 
 m2 = Menu(mainmenu,tearoff=0)
-m2.add_command(label="Cut")
-m2.add_command(label="Copy")
-m2.add_command(label="Paste")
+m2.add_command(label="Cut",command=cut)
+m2.add_command(label="Copy",command=copy)
+m2.add_command(label="Paste",command=paste)
 
 mainmenu.add_cascade(label="Edit",menu=m2)
 
