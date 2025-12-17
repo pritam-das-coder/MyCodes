@@ -1,7 +1,10 @@
 from tkinter import *
 import tkinter.messagebox as tmsg
 def newFile():
-    pass
+    global file
+    root.title("Untitled - Notepad")
+    file=None
+    
 
 def openFile():
     pass
