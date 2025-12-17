@@ -26,9 +26,9 @@ mainmenu = Menu(root)
 root.config(menu=mainmenu)
 
 m1 = Menu(mainmenu,tearoff=0)
-m1.add_command(label="Open")
-m1.add_command(label="Save")
-m1.add_command(label="Save as")
+m1.add_command(label="New",command=newFile)
+m1.add_command(label="Open",command=openFile)
+m1.add_command(label="Save",command=saveFile)
 m1.add_separator()
 m1.add_command(label="Exit",command=root.destroy)
 
