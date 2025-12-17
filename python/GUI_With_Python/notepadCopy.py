@@ -1,6 +1,7 @@
 from tkinter import *
 import tkinter.messagebox as tmsg
 from tkinter.filedialog import askopenfilename, asksaveasfilename
+import os
 
 def newFile():
     global file
@@ -13,6 +14,10 @@ def openFile():
     file=askopenfilename(defaultextension=".txt",
                          filetypes=[("All Files","*.*"),("Text Documents","*.txt")])
     
+    if file=="":
+        file=None
+    else:
+        
 
 def saveFile():
     pass
