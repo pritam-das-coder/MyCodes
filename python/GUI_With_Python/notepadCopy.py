@@ -1,5 +1,7 @@
 from tkinter import *
 import tkinter.messagebox as tmsg
+from tkinter.filedialog import askopenfilename, asksaveasfilename
+
 def newFile():
     global file
     root.title("Untitled - Notepad")
