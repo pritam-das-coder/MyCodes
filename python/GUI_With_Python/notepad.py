@@ -44,6 +44,15 @@ def saveFile():
         f.write(body.get("1.0","end"))
         f.close()
 
+def saveAsFile():
+    global file
+    file=asksaveasfilename(initialfile='Joke.txt',defaultextension=".txt",
+                           filetypes=[("All Files","*.*"),("Text Documents","*.txt")])
+    if file=="":
+        file=None
+    else:
+        f=open(fi)
+
 def cut():
     body.event_generate("<<Cut>>")
 
@@ -68,6 +77,7 @@ m1 = Menu(mainmenu,tearoff=0)
 m1.add_command(label="New",command=newFile)
 m1.add_command(label="Open",command=openFile)
 m1.add_command(label="Save",command=saveFile)
+m1.add_command(label="Save As",command=saveAsFile)
 m1.add_separator()
 m1.add_command(label="Exit",command=root.destroy)
 
