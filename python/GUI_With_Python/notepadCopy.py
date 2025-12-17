@@ -19,7 +19,7 @@ def changeFont():
 
 root=Tk()
 root.geometry("600x450")
-root.title("My Notepad")
+root.title("Untitled - Notepad")
 root.wm_iconbitmap(r"C:\Users\daspr\OneDrive\Desktop\MyCodes\python\GUI_With_Python\notepad.ico")
 
 mainmenu = Menu(root)
