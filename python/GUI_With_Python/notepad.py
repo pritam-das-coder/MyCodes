@@ -119,8 +119,8 @@ file=None
 
 scroll.config(command=body.yview)
 
-statusBar=Frame(root)
-statusBar.pack(side="bottom")
+statusBar=Frame(body)
+statusBar.pack(side="bottom",fill="x")
 
 Label(statusBar,text="Hi").pack()
 
