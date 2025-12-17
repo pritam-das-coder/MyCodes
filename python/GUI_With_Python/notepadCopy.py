@@ -4,7 +4,7 @@ def newFile():
     global file
     root.title("Untitled - Notepad")
     file=None
-    
+    body.delete("1.0","end")
 
 def openFile():
     pass
