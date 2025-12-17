@@ -9,7 +9,10 @@ def newFile():
     body.delete("1.0","end")
 
 def openFile():
-    pass
+    global file
+    file=askopenfilename(defaultextension=".txt",
+                         filetypes=[("All Files","*.*"),("Text Documents","*.txt")])
+    
 
 def saveFile():
     pass
