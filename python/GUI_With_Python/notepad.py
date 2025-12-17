@@ -69,6 +69,9 @@ def paste():
 def undo():
     body.event_generate("<<Undo>>")
 
+def select_all():
+    body.event_generate("<<SelectAll>>")
+    
 def about():
     tmsg.showinfo("About Notepad","Created by Pritam Das")
 
@@ -96,6 +99,8 @@ m2.add_separator()
 m2.add_command(label="Cut",command=cut)
 m2.add_command(label="Copy",command=copy)
 m2.add_command(label="Paste",command=paste)
+m2.add_separator()
+m2.add_command(label="Select All",command=select_all)
 
 mainmenu.add_cascade(label="Edit",menu=m2)
 
