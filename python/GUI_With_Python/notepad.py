@@ -92,6 +92,7 @@ mainmenu.add_cascade(label="File",menu=m1)
 
 m2 = Menu(mainmenu,tearoff=0)
 m2.add_command(label="Undo",command=undo)
+m2.add_separator()
 m2.add_command(label="Cut",command=cut)
 m2.add_command(label="Copy",command=copy)
 m2.add_command(label="Paste",command=paste)
@@ -106,7 +107,7 @@ mainmenu.add_cascade(label="Help",menu=m3)
 scroll = Scrollbar(root,width=25)
 scroll.pack(side="right",fill="y")
 
-body=Text(root,yscrollcommand=scroll.set)
+body=Text(root,yscrollcommand=scroll.set,undo=True)
 body.pack(fill="both",expand=1)
 body.config(font="lucida 16")
 file=None
