@@ -71,7 +71,7 @@ def undo():
 
 def select_all():
     body.event_generate("<<SelectAll>>")
-    
+
 def about():
     tmsg.showinfo("About Notepad","Created by Pritam Das")
 
@@ -119,7 +119,9 @@ file=None
 
 scroll.config(command=body.yview)
 
-statusBar=Label(text="P")
-statusBar.pack()
+statusBar=Frame(root)
+statusBar.pack(side="bottom")
+
+Label(statusBar,text="Hi").pack()
 
 root.mainloop()
