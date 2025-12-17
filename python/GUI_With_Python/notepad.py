@@ -66,6 +66,9 @@ def copy():
 def paste():
     body.event_generate("<<Paste>>")
 
+def undo():
+    body.event_generate("<<Undo>>")
+
 def about():
     tmsg.showinfo("About Notepad","Created by Pritam Das")
 
@@ -88,6 +91,7 @@ m1.add_command(label="Exit",command=root.destroy)
 mainmenu.add_cascade(label="File",menu=m1)
 
 m2 = Menu(mainmenu,tearoff=0)
+m2.add_command(label="Undo",command=undo)
 m2.add_command(label="Cut",command=cut)
 m2.add_command(label="Copy",command=copy)
 m2.add_command(label="Paste",command=paste)
