@@ -24,7 +24,25 @@ def openFile():
         f.close()
 
 def saveFile():
-    pass
+    global file
+    if file==None:
+        file=asksaveasfilename(initialfile='Untitled.txt',defaultextension=".txt",
+                               filetypes=[('All Files','*.*'),('Text Documents','*.txt')])
+        if file=="":
+            file=None
+        else:
+            #Save as a new file
+            f=open(file,"w")
+            f.write(body.get("1.0","end"))
+            f.close()
+
+            root.title(os.path.basename(file)+" - Notepad")
+            print("File Saved")
+    else:
+        #Save the file
+        f=open(file,"w")
+        f.write(body.get("1.0","end"))
+        f.close()
 
 def cut():
     body.event_generate("<<Cut>>")
