@@ -20,7 +20,7 @@ def paste():
 
 def help():
     tmsg.showinfo("About Notepad","Created by Pritam Das")
-    
+
 root=Tk()
 root.geometry("600x450")
 root.title("Untitled - Notepad")
@@ -53,5 +53,6 @@ mainmenu.add_cascade(label="About Notepad",menu=m3)
 body=Text(root)
 body.pack(fill="both",expand=1)
 body.config(font="lucida 16")
+file=None
 
 root.mainloop()
