@@ -109,7 +109,7 @@ file=None
 
 scroll.config(command=body.yview)
 
-statusBar=Label()
+statusBar=Label(text="P")
 statusBar.pack()
 
 root.mainloop()
