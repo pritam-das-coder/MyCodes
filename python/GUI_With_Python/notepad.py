@@ -55,6 +55,8 @@ def saveAsFile():
         f.write(body.get("1.0","end"))
         f.close()
 
+        root.title(os.path.basename(file)+" - Notepad")
+
 def cut():
     body.event_generate("<<Cut>>")
 
