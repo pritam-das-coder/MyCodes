@@ -19,7 +19,8 @@ def paste():
     pass
 
 def help():
-    tmsg.showinfo("")
+    tmsg.showinfo("About Notepad","Created by Pritam Das")
+    
 root=Tk()
 root.geometry("600x450")
 root.title("Untitled - Notepad")
