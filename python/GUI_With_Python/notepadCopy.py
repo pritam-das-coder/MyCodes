@@ -50,10 +50,13 @@ m3.add_command(label="About Notepad",command=about)
 
 mainmenu.add_cascade(label="Help",menu=m3)
 
-body=Text(root)
+scroll = Scrollbar(body)
+scroll.pack()
+
+body=Text(root,yscrollcommand=scroll.set)
 body.pack(fill="both",expand=1)
 body.config(font="lucida 16")
 file=None
 
-scroll = Scrollbar()
+
 root.mainloop()
