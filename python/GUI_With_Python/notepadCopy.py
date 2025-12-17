@@ -10,13 +10,13 @@ def saveFile():
     pass
 
 def cut():
-    pass
+    body.event_generate("<<Cut>>")
 
 def copy():
-    pass
+    body.event_generate("<<Copy>>")
 
 def paste():
-    pass
+    body.event_generate("<<Paste>>")
 
 def about():
     tmsg.showinfo("About Notepad","Created by Pritam Das")
