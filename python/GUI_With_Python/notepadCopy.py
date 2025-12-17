@@ -17,7 +17,11 @@ def openFile():
     if file=="":
         file=None
     else:
-        
+        root.title(os.path.basename(file)+" - Notepad")
+        body.delete("1.0","end")
+        f=open(file,"r")
+        body.insert("1.0",f.read())
+        f.close()
 
 def saveFile():
     pass
