@@ -52,7 +52,8 @@ def saveAsFile():
         file=None
     else:
         f=open(file,"w")
-        body.
+        f.write(body.get("1.0","end"))
+        f.close()
 
 def cut():
     body.event_generate("<<Cut>>")
