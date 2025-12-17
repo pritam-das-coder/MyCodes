@@ -50,8 +50,8 @@ m3.add_command(label="About Notepad",command=about)
 
 mainmenu.add_cascade(label="Help",menu=m3)
 
-scroll = Scrollbar(body)
-scroll.pack()
+scroll = Scrollbar(root)
+scroll.pack(side="right",fill="y")
 
 body=Text(root,yscrollcommand=scroll.set)
 body.pack(fill="both",expand=1)
