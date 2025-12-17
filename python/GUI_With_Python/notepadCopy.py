@@ -35,25 +35,16 @@ m1.add_command(label="Exit",command=root.destroy)
 mainmenu.add_cascade(label="File",menu=m1)
 
 m2 = Menu(mainmenu,tearoff=0)
-# m2.add_command(label="Undo")
-# m2.add_separator()
 m2.add_command(label="Cut")
 m2.add_command(label="Copy")
 m2.add_command(label="Paste")
-# m2.add_command(label="Delete")
-# m2.add_separator()
-# m2.add_command(label="Time/Date")
-# m2.add_separator()
-# m2.add_command(label="Font",command=changeFont)
 
 mainmenu.add_cascade(label="Edit",menu=m2)
 
 m3 = Menu(mainmenu,tearoff=0)
-m3.add_command(label="Status Bar")
-m3.add_separator()
-m3.add_command(label="Zoom")
+m3.add_command(label="Help",command=help)
 
-mainmenu.add_cascade(label="View",menu=m3)
+mainmenu.add_cascade(label="About Notepad",menu=m3)
 
 body=Text(root)
 body.pack(fill="both",expand=1)
