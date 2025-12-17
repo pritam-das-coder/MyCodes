@@ -55,4 +55,5 @@ body.pack(fill="both",expand=1)
 body.config(font="lucida 16")
 file=None
 
+scroll = Scrollbar()
 root.mainloop()
