@@ -18,7 +18,7 @@ def copy():
 def paste():
     pass
 
-def help():
+def about():
     tmsg.showinfo("About Notepad","Created by Pritam Das")
 
 root=Tk()
@@ -46,9 +46,9 @@ m2.add_command(label="Paste",command=paste)
 mainmenu.add_cascade(label="Edit",menu=m2)
 
 m3 = Menu(mainmenu,tearoff=0)
-m3.add_command(label="Help",command=help)
+m3.add_command(label="About Notepad",command=about)
 
-mainmenu.add_cascade(label="About Notepad",menu=m3)
+mainmenu.add_cascade(label="Help",menu=m3)
 
 body=Text(root)
 body.pack(fill="both",expand=1)
