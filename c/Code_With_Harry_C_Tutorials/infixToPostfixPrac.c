@@ -72,8 +72,11 @@ char* infixToPostfix(char* infix){
                 i++;
             }
             else{
-                postfix[j]=pop(sp);
-                j++;
+                char ch=pop(sp);
+                if(ch!='('){
+                    postfix[j]=ch;
+                    j++;
+                }
             }
         }
     }
