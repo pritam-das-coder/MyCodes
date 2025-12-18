@@ -9,6 +9,7 @@ typedef struct stack{
 }stack;
 
 int stackTop(stack* sp){
+    if
     return sp->arr[sp->top];
 }
 
