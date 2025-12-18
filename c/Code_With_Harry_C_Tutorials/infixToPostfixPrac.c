@@ -47,6 +47,7 @@ int isOperator(char ch){
 int precedence(char ch){
     if(ch=='+' || ch=='-') return 1;
     else if(ch=='*' || ch=='/') return 2;
+    else if(ch=='^') return 3;
     else return 0;
 }
 
@@ -85,7 +86,7 @@ char* infixToPostfix(char* infix){
 }
 
 int main(){
-    char* infix="a+b*c-d/e";
+    char* infix="A+(B*C-(D/E^F)*G)*H";
     printf("Postfix expression is %s",infixToPostfix(infix));
     return 0;
 }
