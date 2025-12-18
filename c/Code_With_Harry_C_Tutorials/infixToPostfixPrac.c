@@ -39,11 +39,14 @@ char pop(stack* sp){
     return val;
 }
 
-// char* infixToPostfix(char* infix){
-//     char* postfix=(char*)malloc((strlen(infix)+1)*sizeof(char))
-// }
+char* infixToPostfix(char* infix){
+    char* postfix=(char*)malloc((strlen(infix)+1)*sizeof(char));
+    int i=0; // to scan 
+    int j=0;
+}
+
 int main(){
     char* infix="x-y/z-k*d";
-    printf("%d",strlen(infix));
+    
     return 0;
 }
