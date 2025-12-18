@@ -41,7 +41,7 @@ char pop(stack* sp){
 }
 
 int isOperator(char ch){
-    return (ch=='+'|| ch=='-' || ch=='*' || ch=='/' || ch=='(');
+    return (ch=='+'|| ch=='-' || ch=='*' || ch=='/' || ch=='(' || ch==')');
 }
 
 int precedence(char ch){
