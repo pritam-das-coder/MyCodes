@@ -37,7 +37,11 @@ char pop(stack* sp){
     return val;
 }
 
-int main(){
+char* infixToPostfix(char* infix){
     
+}
+int main(){
+    char* infix="x-y/z-k*d";
+
     return 0;
 }
