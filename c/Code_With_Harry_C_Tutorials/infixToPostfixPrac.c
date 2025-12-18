@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 typedef struct stack{
     int top;
@@ -37,11 +39,11 @@ char pop(stack* sp){
     return val;
 }
 
-char* infixToPostfix(char* infix){
-    
-}
+// char* infixToPostfix(char* infix){
+//     char* postfix=(char*)malloc((strlen(infix)+1)*sizeof(char))
+// }
 int main(){
     char* infix="x-y/z-k*d";
-
+    printf("%d",strlen(infix));
     return 0;
 }
