@@ -39,6 +39,16 @@ char pop(stack* sp){
     return val;
 }
 
+int isOperator(char ch){
+    return (ch=='+'|| ch=='-' || ch=='*' || ch=='/');
+}
+
+int precedence(char ch){
+    if(ch=='+' || ch=='-') return 1;
+    else if(ch=='*' || ch=='/') return 2;
+    else return 0;
+}
+
 char* infixToPostfix(char* infix){
     stack* sp=(stack*)malloc(sizeof(stack));
     sp->top=-1;
@@ -65,10 +75,16 @@ char* infixToPostfix(char* infix){
             }
         }
     }
+    while(!isEmpty(sp)){
+        postfix[j]=pop(sp);
+        j++;
+    }
+    postfix[j]='\0';
+    return postfix;
 }
 
 int main(){
     char* infix="x-y/z-k*d";
-    
+    printf("Postfix expression is %s",infixToPostfix(infix));
     return 0;
 }
