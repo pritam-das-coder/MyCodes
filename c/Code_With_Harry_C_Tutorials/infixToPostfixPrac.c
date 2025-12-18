@@ -41,6 +41,7 @@ char pop(stack* sp){
 
 char* infixToPostfix(char* infix){
     stack* sp=(stack*)malloc(sizeof(stack));
+    sp->top=-1;
     char* postfix=(char*)malloc((strlen(infix)+1)*sizeof(char));
     int i=0; // to scan infix array
     int j=0; // to fill postfix array
@@ -52,7 +53,7 @@ char* infixToPostfix(char* infix){
         }
         else{
             if(precedence(infix[i])>precedence(stackTop(sp))){
-                
+
             }
         }
     }
