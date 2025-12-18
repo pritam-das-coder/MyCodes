@@ -55,6 +55,11 @@ char* infixToPostfix(char* infix){
         }
         else{
             if(precedence(infix[i])>precedence(stackTop(sp))){
+                sp->top++;
+                sp->arr[sp->top]=infix[i];
+                i++;
+            }
+            else{
                 
             }
         }
