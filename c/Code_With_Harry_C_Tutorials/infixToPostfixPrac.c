@@ -77,6 +77,7 @@ char* infixToPostfix(char* infix){
                     postfix[j]=ch;
                     j++;
                 }
+                else i++;
             }
         }
     }
