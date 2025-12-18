@@ -20,7 +20,7 @@ int isFull(stack* sp){
 
 void push(stack* sp,char val){
     if(isFull(sp)){
-        printf("Your stack is full");
+        printf("Stack Overflow! Can't push %c into stack\n",val);
         return;
     }
     sp->top++;
@@ -29,7 +29,7 @@ void push(stack* sp,char val){
 
 char pop(stack* sp){
     if(isEmpty(sp)){
-        printf("Your stack is empty");
+        printf("Stack Underflow! Can't pop from stack\n");
         return -1;
     }
     char val=sp->arr[sp->top];
