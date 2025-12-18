@@ -42,6 +42,8 @@ char pop(stack* sp){
 char* infixToPostfix(char* infix){
     stack* sp=(stack*)malloc(sizeof(stack));
     sp->top=-1;
+    sp->size=10;
+    sp->arr=(char*)malloc(sp->size*sizeof(char));
     char* postfix=(char*)malloc((strlen(infix)+1)*sizeof(char));
     int i=0; // to scan infix array
     int j=0; // to fill postfix array
