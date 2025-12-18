@@ -38,6 +38,6 @@ char pop(stack* sp){
 }
 
 int main(){
-
+    
     return 0;
 }
