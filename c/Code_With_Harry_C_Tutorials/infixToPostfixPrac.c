@@ -55,7 +55,7 @@ char* infixToPostfix(char* infix){
         }
         else{
             if(precedence(infix[i])>precedence(stackTop(sp))){
-
+                
             }
         }
     }
