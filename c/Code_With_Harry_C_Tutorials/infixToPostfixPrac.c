@@ -30,7 +30,7 @@ void push(stack* sp,char val){
 char pop(stack* sp){
     if(isEmpty(sp)){
         printf("Your stack is empty");
-        return -11;
+        return -1;
     }
     char val=sp->arr[sp->top];
     sp->top--;
