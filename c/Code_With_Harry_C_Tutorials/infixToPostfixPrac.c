@@ -17,6 +17,14 @@ int isEmpty(stack* sp){
 int isFull(stack* sp){
     return (sp->top==sp->size-1);
 }
+
+void push(stack* sp,char val){
+    if(isFull(sp)){
+        printf("Your stack is full");
+        return;
+    }
+    
+}
 int main(){
 
     return 0;
