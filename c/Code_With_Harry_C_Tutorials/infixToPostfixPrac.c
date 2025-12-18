@@ -54,7 +54,7 @@ int precedence(char ch){
 char* infixToPostfix(char* infix){
     stack* sp=(stack*)malloc(sizeof(stack));
     sp->top=-1;
-    sp->size=20;
+    sp->size=strlen(infix);
     sp->arr=(char*)malloc(sp->size*sizeof(char));
     char* postfix=(char*)malloc((strlen(infix)+1)*sizeof(char));
     int i=0; // to scan infix array
