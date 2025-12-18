@@ -23,8 +23,20 @@ void push(stack* sp,char val){
         printf("Your stack is full");
         return;
     }
-    
+    sp->top++;
+    sp->arr[sp->top]=val;
 }
+
+char pop(stack* sp){
+    if(isEmpty(sp)){
+        printf("Your stack is empty");
+        return -11;
+    }
+    char val=sp->arr[sp->top];
+    sp->top--;
+    return val;
+}
+
 int main(){
 
     return 0;
