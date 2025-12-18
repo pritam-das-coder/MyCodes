@@ -60,7 +60,8 @@ char* infixToPostfix(char* infix){
                 i++;
             }
             else{
-                
+                postfix[j]=pop(sp);
+                j++;
             }
         }
     }
