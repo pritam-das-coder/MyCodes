@@ -66,7 +66,7 @@ char* infixToPostfix(char* infix){
             j++;
         }
         else{
-            if(infix[i]=='(' || precedence(infix[i])>precedence(stackTop(sp))){
+            if(infix[i]=='(' || precedence(infix[i])>precedence(stackTop(sp)) || (infix[i]=='^' && precedence(infix[i])>=precedence(stackTop(sp)))){
                 push(sp,infix[i]);
                 i++;
             }
