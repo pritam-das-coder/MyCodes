@@ -78,7 +78,7 @@ int evaluatePostfix(char* postfix){
 }
 
 int main(){
-    char* postfix="456*+";
+    char* postfix="53+82-*";
     printf("Calculated value is %d",evaluatePostfix(postfix));
     return 0;
 }
