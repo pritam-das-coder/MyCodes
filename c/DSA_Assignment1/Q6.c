@@ -46,7 +46,7 @@ int isOperator(char ch){
     return (ch=='+'||ch=='-'||ch=='*'||ch=='/'||ch=='^');
 }
 
-int calc(int op2,int op1,char operator){
+int calc(int op1,int op2,char operator){
     if(operator=='+') return op1+op2;
     else if(operator=='-') return op1-op2;
     else if(operator=='*') return op1*op2;
@@ -66,7 +66,9 @@ int evaluatePostfix(char* postfix){
             push(sp,postfix[i]-'0');
         }
         else{
-            int val=calc(pop(sp),pop(sp),postfix[i]); // op2-op1
+            int op2=pop(sp);
+            int op1=pop(sp);
+            int val=calc(op1,op2,postfix[i]); // op2-op1
             push(sp,val);
         }
         i++;
