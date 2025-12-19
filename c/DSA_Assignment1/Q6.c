@@ -64,10 +64,12 @@ int evaluatePostfix(char* postfix){
     int i=0;
     while(postfix[i]!='\0'){
         if(!isOperator(postfix[i])){ // operand
-            push(sp,postfix[i]);
+            push(sp,postfix[i]-'0');
         }
         else{
-            int val=calc(pop(sp),pop(sp),postfix[i]); // op2-op1
+            int op1=pop(sp);
+            int op2=pop(sp);
+            int val=calc(op2,op1,postfix[i]); // op2-op1
             push(sp,val);
         }
         i++;
