@@ -66,7 +66,8 @@ char* infixToPostfix(char* infix){
             j++;
         }
         else{
-            if(infix[i]=='(' || precedence(infix[i])>precedence(stackTop(sp)) || (infix[i]=='^' && precedence(infix[i])>=precedence(stackTop(sp)))){
+            if(infix[i]=='(' || precedence(infix[i])>precedence(stackTop(sp)) 
+            || (infix[i]=='^' && precedence(infix[i])==precedence(stackTop(sp)))){ // as ^ is right associative
                 push(sp,infix[i]);
                 i++;
             }
@@ -85,11 +86,15 @@ char* infixToPostfix(char* infix){
         j++;
     }
     postfix[j]='\0';
+    free(sp);
+    free(sp->arr);
     return postfix;
 }
 
 int main(){
-    char* infix="A+(B*C-(D/E^F)*G)*H";
-    printf("Postfix expression is %s",infixToPostfix(infix));
+    char* infix="A^B^C";
+    char* postfix=infixToPostfix(infix);
+    printf("Postfix expression is %s",postfix);
+    free(postfix);
     return 0;
 }
