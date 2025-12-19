@@ -46,7 +46,16 @@ int evaluatePostfix(char* postfix){
     sp->top=-1;
     sp->size=strlen(postfix);
     sp->arr=(int*)malloc((sp->size+1)*sizeof(int));
-    
+    int i=0;
+    while(postfix[i]!='\0'){
+        if(!isOperator(postfix[i])){ // operand
+            push(sp,postfix[i]);
+            i++;
+        }
+        else{
+            
+        }
+    }
 }
 int main(){
 
