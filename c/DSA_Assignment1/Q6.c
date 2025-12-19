@@ -53,7 +53,8 @@ int evaluatePostfix(char* postfix){
             i++;
         }
         else{
-            
+            int val=calc(pop(sp),pop(sp),postfix[i]); // op2-op1
+            push(sp,val);
         }
     }
 }
