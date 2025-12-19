@@ -1,6 +1,7 @@
 // Write a program in C to evaluate value of a postfix expression using stack. E.g. 456*+ result will be 34.
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct stack{
     int top;
@@ -21,21 +22,33 @@ int isFull(stack* sp){
     return (sp->top==sp->size-1);
 }
 
-void push(stack* sp,char val){
+void push(stack* sp,int val){
     if(isFull(sp)){
-        printf("Stack Overflow! Can't push %c into stack\n",val);
+        printf("Stack Overflow! Can't push %d into stack\n",val);
         return;
     }
     sp->top++;
     sp->arr[sp->top]=val;
 }
 
-char pop(stack* sp){
+int pop(stack* sp){
     if(isEmpty(sp)){
         printf("Stack Underflow! Can't pop from stack\n");
         return -1;
     }
-    char val=sp->arr[sp->top];
+    int val=sp->arr[sp->top];
     sp->top--;
     return val;
+}
+
+int evaluatePostfix(char* postfix){
+    stack* sp=(stack*)malloc(sizeof(stack));
+    sp->top=-1;
+    sp->size=strlen(postfix);
+    sp->arr=(int*)malloc((sp->size+1)*sizeof(int));
+    
+}
+int main(){
+
+    return 0;
 }
