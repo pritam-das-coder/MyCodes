@@ -72,8 +72,8 @@ int evaluatePostfix(char* postfix){
         i++;
     }
     int ans=pop(sp);
-    free(sp);
     free(sp->arr);
+    free(sp);
     return ans;
 }
 
