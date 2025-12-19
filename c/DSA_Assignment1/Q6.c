@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 typedef struct stack{
     int top;
@@ -41,6 +42,10 @@ int pop(stack* sp){
     return val;
 }
 
+int isOperator(char ch){
+    return (ch=='+'||ch=='-'||ch=='*'||ch=='/'||ch=='^');
+}
+
 int calc(char op2,char op1,char operator){
     int val1=op1-'0',val2=op2-'0';
     if(operator=='+') return val1+val2;
@@ -67,10 +72,13 @@ int evaluatePostfix(char* postfix){
         }
         i++;
     }
+    free(sp);
+    free(sp->arr);
     return pop(sp);
 }
 
 int main(){
-
+    char* postfix="456*+";
+    printf("Calculated value is %d",evaluatePostfix(postfix));
     return 0;
 }
