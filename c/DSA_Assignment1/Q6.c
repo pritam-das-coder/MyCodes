@@ -41,6 +41,16 @@ int pop(stack* sp){
     return val;
 }
 
+int calc(char op2,char op1,char operator){
+    int val1=op1-'0',val2=op2-'0';
+    if(operator=='+') return val1+val2;
+    else if(operator=='-') return val1-val2;
+    else if(operator=='*') return val1*val2;
+    else if(operator=='/') return val1/val2;
+    else if(operator=='^') return pow(val1,val2);
+    else return -1;
+}
+
 int evaluatePostfix(char* postfix){
     stack* sp=(stack*)malloc(sizeof(stack));
     sp->top=-1;
@@ -50,14 +60,16 @@ int evaluatePostfix(char* postfix){
     while(postfix[i]!='\0'){
         if(!isOperator(postfix[i])){ // operand
             push(sp,postfix[i]);
-            i++;
         }
         else{
             int val=calc(pop(sp),pop(sp),postfix[i]); // op2-op1
             push(sp,val);
         }
+        i++;
     }
+    return pop(sp);
 }
+
 int main(){
 
     return 0;
