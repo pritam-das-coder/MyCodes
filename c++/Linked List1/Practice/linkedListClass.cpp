@@ -67,6 +67,10 @@ public:
             t=t->next;
         }
     }
+
+    int getElement(int idx){
+        
+    }
 };
 
 int main(){
