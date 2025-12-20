@@ -73,5 +73,7 @@ int main(){
     ll.insertAtBeg(1);
     ll.insertAtBeg(5);
     ll.insertAtBeg(12);
+    ll.insertAtEnd(56);
+    ll.insertAtIdx(2,76);
     ll.print();
 }
