@@ -41,6 +41,7 @@ void printRec(Node* head){
     cout<<head->val<<" ";
     printRec(head->next);
 }
+
 int main(){
     Node* HP=build123();
     //print(HP);
