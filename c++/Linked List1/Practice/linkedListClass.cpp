@@ -69,7 +69,11 @@ public:
     }
 
     int getElement(int idx){
-        
+        Node* temp=head;
+        for(int i=1;i<=idx;i++){
+            temp=temp->next;
+        }
+        return temp->val;
     }
 };
 
