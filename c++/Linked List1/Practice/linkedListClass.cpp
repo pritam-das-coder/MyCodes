@@ -46,10 +46,10 @@ public:
             cout<<"Invalid Input"<<endl;
             return;
         }
-        Node* temp=head;
-        Node* ptr=new Node(val);
         if(idx==0) insertAtBeg(val);
         else{
+            Node* temp=head;
+            Node* ptr=new Node(val);
             for(int i=1;i<=idx-1;i++){
                 temp=temp->next;
             }
@@ -59,4 +59,19 @@ public:
         size++;
     }
 
+    void print(){
+        Node* t=head;
+        while(t!=NULL){
+            cout<<t->val<<" ";
+            t=t->next;
+        }
+    }
 };
+
+int main(){
+    LinkedList ll;
+    ll.insertAtBeg(1);
+    ll.insertAtBeg(5);
+    ll.insertAtBeg(12);
+    pr
+}
