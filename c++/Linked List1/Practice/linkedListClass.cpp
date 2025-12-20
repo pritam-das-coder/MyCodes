@@ -42,7 +42,13 @@ public:
     }
 
     void insertAtIdx(int idx,int val){
-        
+        Node* temp=head;
+        Node* ptr=new Node(val);
+        for(int i=1;i<=idx-1;i++){
+            temp=temp->next;
+        }
+        temp->next=ptr;
+        ptr->next=temp->next;
     }
 
 };
