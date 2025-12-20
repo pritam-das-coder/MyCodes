@@ -54,8 +54,8 @@ public:
             for(int i=1;i<=idx-1;i++){
                 temp=temp->next;
             }
-            temp->next=ptr;
             ptr->next=temp->next;
+            temp->next=ptr;
             size++;
         }
     }
@@ -75,6 +75,6 @@ int main(){
     ll.insertAtBeg(5);
     ll.insertAtBeg(12);
     ll.insertAtEnd(56);
-    ll.insertAtIdx(2,76);
+    ll.insertAtIdx(4,76);
     ll.print();
 }
