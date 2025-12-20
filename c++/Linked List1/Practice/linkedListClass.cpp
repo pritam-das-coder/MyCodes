@@ -32,7 +32,13 @@ public:
     }
 
     void insertAtBeg(int val){
-        
+        Node* ptr=new Node(val);
+        if(size==0) head=tail=ptr;
+        else{
+            ptr->next=head;
+            head=ptr;
+        }
+        size++;
     }
 
 };
