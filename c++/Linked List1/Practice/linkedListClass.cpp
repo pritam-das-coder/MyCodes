@@ -47,6 +47,7 @@ public:
             return;
         }
         if(idx==0) insertAtBeg(val);
+        else if(idx==size) insertAtEnd(val);
         else{
             Node* temp=head;
             Node* ptr=new Node(val);
