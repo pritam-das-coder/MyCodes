@@ -12,6 +12,7 @@ public:
 };
 
 class LinkedList{
+public:
     Node* head;
     Node* tail;
     int size;
@@ -19,5 +20,5 @@ class LinkedList{
         head=tail=NULL;
         size=0;
     }
-    
+
 };
