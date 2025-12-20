@@ -24,6 +24,9 @@ public:
     void insertAtEnd(int val){
         Node* ptr=new Node(val);
         if(size==0) head=tail=ptr;
-        else tail->next=ptr;
+        else {
+            tail->next=ptr;
+            tail=ptr;
+        }
     }
 };
