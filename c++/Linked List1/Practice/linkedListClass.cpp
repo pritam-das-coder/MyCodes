@@ -21,4 +21,9 @@ public:
         size=0;
     }
 
+    void insertAtEnd(int val){
+        Node* ptr=new Node(val);
+        if(size==0) head=tail=ptr;
+        else tail->next=ptr;
+    }
 };
