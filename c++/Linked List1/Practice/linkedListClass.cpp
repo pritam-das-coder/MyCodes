@@ -28,5 +28,6 @@ public:
             tail->next=ptr;
             tail=ptr;
         }
+        size++;
     }
 };
