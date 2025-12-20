@@ -73,5 +73,5 @@ int main(){
     ll.insertAtBeg(1);
     ll.insertAtBeg(5);
     ll.insertAtBeg(12);
-    pr
+    ll.print();
 }
