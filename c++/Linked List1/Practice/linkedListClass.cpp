@@ -55,8 +55,8 @@ public:
             }
             temp->next=ptr;
             ptr->next=temp->next;
+            size++;
         }
-        size++;
     }
 
     void print(){
