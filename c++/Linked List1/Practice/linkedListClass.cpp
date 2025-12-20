@@ -41,4 +41,8 @@ public:
         size++;
     }
 
+    void insertAtIdx(int idx,int val){
+        
+    }
+
 };
