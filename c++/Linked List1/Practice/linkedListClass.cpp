@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 class Node{
@@ -66,9 +67,14 @@ public:
             cout<<t->val<<" ";
             t=t->next;
         }
+        cout<<endl;
     }
 
     int getElement(int idx){
+        if(idx<0 || idx>=size){
+            cout<<"Invalid Input"<<" ";
+            return INT_MIN;
+        }
         Node* temp=head;
         for(int i=1;i<=idx;i++){
             temp=temp->next;
@@ -85,4 +91,5 @@ int main(){
     ll.insertAtEnd(56);
     ll.insertAtIdx(4,76);
     ll.print();
+    cout<<ll.getElement(7)<<endl;
 }
