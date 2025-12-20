@@ -42,6 +42,10 @@ public:
     }
 
     void insertAtIdx(int idx,int val){
+        if(idx<0 || idx>size){
+            cout<<"Invalid Input"<<endl;
+            return;
+        }
         Node* temp=head;
         Node* ptr=new Node(val);
         if(size==0 && idx==0) head=tail=ptr;
