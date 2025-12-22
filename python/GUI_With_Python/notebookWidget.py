@@ -4,6 +4,9 @@ from tkinter import ttk
 def hide():
     my_notebook.hide(1)
 
+def show():
+    my_notebook.add(my_frame2,text="Red Tab")
+
 root=Tk()
 root.title("Learn Notebook")
 root.geometry("500x500")
@@ -20,6 +23,8 @@ my_frame2.pack(fill="both",expand=True)
 my_notebook.add(my_frame1,text="Blue Tab")
 my_notebook.add(my_frame2,text="Red Tab")
 
-my_button1=Button(my_frame1,text="Hide Tab 2",command=hide).pack()
+Button(my_frame1,text="Hide Tab 2",command=hide).pack(pady=15)
+
+Button(my_frame1,text="Show Tab 2",command=show).pack(pady=15)
 
 root.mainloop()
