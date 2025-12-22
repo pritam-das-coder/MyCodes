@@ -69,6 +69,7 @@ public:
         else{
             Node* t=head;
             for(int i=1;i<=idx-1;i++){
+                if(t==NULL)
                 t=t->next;
             }
             t->next=t->next->next;
