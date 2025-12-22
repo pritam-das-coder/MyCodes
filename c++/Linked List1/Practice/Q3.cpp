@@ -18,21 +18,19 @@ public:
     LL(){
         head=NULL;
     }
-    Node* insertAtHead(int val){
+    void insertAtHead(int val){
         Node* ptr=new Node(val);
         ptr->next=head;
         head=ptr;
-        return head;
     }
-    Node* insertAtTail(int val){
+    void insertAtTail(int val){
         Node* ptr=new Node(val);
-        if(head==NULL) return ptr;
+        if(head==NULL) head=ptr;
         Node* t=head;
         while(t->next!=NULL){
             t=t->next;
         }
         t->next=ptr;
-        return head;
     }
     Node* insertAtIdx(int idx,int val){
         if(idx==0) insertAtHead(val);
