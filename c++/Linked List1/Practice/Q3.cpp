@@ -52,7 +52,15 @@ public:
         }
     }
     Node* deleteHead(){
+        if(head==NULL) return head;
         return head->next;
+    }
+    Node* deleteTail(){
+        Node* t=head;
+        while(t->next->next!=NULL){
+            t=t->next;
+        }
+        t->next=NULL;
     }
     void display(){
         Node* t=head;
