@@ -22,6 +22,7 @@ public:
         Node* ptr=new Node(val);
         ptr->next=head;
         head=ptr;
+        return head;
     }
     Node* insertAtTail(int val){
         Node* ptr=new Node(val);
@@ -39,10 +40,15 @@ public:
             Node* ptr=new Node(val);
             Node* t=head;
             for(int i=1;i<=idx-1;i++){
+                if(t==NULL){
+                    cout<<"Invalid Index"<<endl;
+                    return head;
+                }
                 t=t->next;
             }
             ptr->next=t->next;
             t->next=ptr;
+            return head;
         }
     }
 };
