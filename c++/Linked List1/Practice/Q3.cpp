@@ -15,11 +15,12 @@ public:
 class LL{
 public:
     Node* head;
-    Node* tail;
-    int size;
     LL(){
-        head=tail=NULL;
-        size=0;
+        head=NULL;
     }
-    
+    Node* insertAtHead(int val){
+        Node* ptr=new Node(val);
+        
+    }
+
 };
