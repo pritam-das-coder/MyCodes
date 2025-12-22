@@ -79,7 +79,15 @@ public:
         }
     }
     Node* get(int idx){
-        
+        Node* t=head;
+        for(int i=1;i<=idx;i++){
+            if(t==NULL){
+                cout<<"Invalid Input"<<endl;
+                return head;
+            }
+            t=t->next;
+        }
+        return t;
     }
     void display(){
         Node* t=head;
@@ -100,7 +108,8 @@ int main(){
     l.insertAtIdx(0,21);
     // l.deleteHead();
     // l.deleteTail();
-    l.deleteAtIdx(9);
+    //l.deleteAtIdx(9);
     //l.insertAtIdx(8,11);
+    cout<<l.get(6)->val<<endl;
     l.display();
 }
