@@ -25,11 +25,18 @@ public:
     }
     Node* insertAtTail(int val){
         Node* ptr=new Node(val);
+        if(head==NULL) return ptr;
         Node* t=head;
         while(t->next!=NULL){
             t=t->next;
         }
         t->next=ptr;
-        
+        return head;
+    }
+    Node* insertAtIdx(int idx,int val){
+        if(idx==0) insertAtHead(val);
+        else{
+            
+        }
     }
 };
