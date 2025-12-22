@@ -4,6 +4,12 @@ import tkinter.messagebox as tmsg
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 import os
 
+def newTab():
+    pass
+
+def closeTab():
+    pass
+
 def newFile():
     global file
     root.title("Untitled - Notepad")
@@ -114,17 +120,17 @@ mainmenu.add_cascade(label="Help",menu=m3)
 notebook=ttk.Notebook(root)
 notebook.pack(fill="both",expand=1)
 
-scroll = Scrollbar(root,width=25)
-scroll.pack(side="right",fill="y")
+# scroll = Scrollbar(root,width=25)
+# scroll.pack(side="right",fill="y")
 
-body=Text(root,yscrollcommand=scroll.set,undo=True)
-body.pack(fill="both",expand=1)
-body.config(font="lucida 16")
-file=None
+# body=Text(root,yscrollcommand=scroll.set,undo=True)
+# body.pack(fill="both",expand=1)
+# body.config(font="lucida 16")
+# file=None
 
-scroll.config(command=body.yview)
+# scroll.config(command=body.yview)
 
-statusBar=Frame(body)
+statusBar=Frame(root)
 statusBar.pack(side="bottom",fill="x")
 
 Label(statusBar,text="Plain Text").pack(side="left")
