@@ -9,7 +9,7 @@ def newTab():
     text.pack(fill="both",expand=1)
     text.config(font="lucida 16")
     file=None
-    notebook.add(text="Untitled")
+    notebook.add(text,text="Untitled")
 
 def closeTab():
     pass
