@@ -40,6 +40,7 @@ public:
             for(int i=1;i<=idx-1;i++){
                 if(t==NULL){
                     cout<<"Invalid Index"<<endl;
+                    return;
                 }
                 t=t->next;
             }
@@ -47,18 +48,23 @@ public:
             t->next=ptr;
         }
     }
-    Node* deleteHead(){
-        if(head==NULL) return head;
-        return head->next;
+    void deleteHead(){
+        if(head==NULL) return;
+        head=head->next;
     }
-    Node* deleteTail(){
-        if(head==NULL || head->next==NULL) return NULL;
+    void deleteTail(){
+        if(head==NULL || head->next==NULL) head=NULL;
         Node* t=head;
         while(t->next->next!=NULL){
             t=t->next;
         }
         t->next=NULL;
-        return head;
+    }
+    void deleteAtIdx(int idx){
+        
+    }
+    Node* get(int idx){
+
     }
     void display(){
         Node* t=head;
@@ -77,6 +83,6 @@ int main(){
     l.insertAtIdx(1,34);
     l.insertAtIdx(3,44);
     l.insertAtIdx(0,21);
-    l.insertAtIdx(8,11);
+    //l.insertAtIdx(8,11);
     l.display();
 }
