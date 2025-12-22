@@ -56,11 +56,13 @@ public:
         return head->next;
     }
     Node* deleteTail(){
+        if(head==NULL || head->next==NULL) return NULL;
         Node* t=head;
         while(t->next->next!=NULL){
             t=t->next;
         }
         t->next=NULL;
+        return head;
     }
     void display(){
         Node* t=head;
