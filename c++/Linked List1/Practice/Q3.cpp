@@ -20,7 +20,16 @@ public:
     }
     Node* insertAtHead(int val){
         Node* ptr=new Node(val);
+        ptr->next=head;
+        head=ptr;
+    }
+    Node* insertAtTail(int val){
+        Node* ptr=new Node(val);
+        Node* t=head;
+        while(t->next!=NULL){
+            t=t->next;
+        }
+        t->next=ptr;
         
     }
-
 };
