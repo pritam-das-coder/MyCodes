@@ -51,4 +51,26 @@ public:
             return head;
         }
     }
+    Node* deleteHead(){
+        return head->next;
+    }
+    void display(){
+        Node* t=head;
+        while(t!=NULL){
+            cout<<t->val<<" ";
+            t=t->next;
+        }
+        cout<<endl;
+    }
 };
+int main(){
+    LL l;
+    l.insertAtHead(3);
+    l.insertAtHead(9);
+    l.insertAtTail(12);
+    l.insertAtIdx(1,34);
+    l.insertAtIdx(3,44);
+    l.insertAtIdx(0,21);
+    l.insertAtIdx(8,11);
+    l.display();
+}
