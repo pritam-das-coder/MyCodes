@@ -25,7 +25,10 @@ public:
     }
     void insertAtTail(int val){
         Node* ptr=new Node(val);
-        if(head==NULL) head=ptr;
+        if(head==NULL){
+            head=ptr;
+            return;
+        }
         Node* t=head;
         while(t->next!=NULL){
             t=t->next;
@@ -53,7 +56,10 @@ public:
         head=head->next;
     }
     void deleteTail(){
-        if(head==NULL || head->next==NULL) head=NULL;
+        if(head==NULL || head->next==NULL){
+            head=NULL;
+            return;
+        }
         Node* t=head;
         while(t->next->next!=NULL){
             t=t->next;
