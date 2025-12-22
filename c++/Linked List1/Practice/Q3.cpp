@@ -69,15 +69,18 @@ public:
         else{
             Node* t=head;
             for(int i=1;i<=idx-1;i++){
-                if(t==NULL)
+                if(t==NULL || t->next==NULL){
+                    cout<<"Invalid Input"<<endl;
+                    return;
+                }
                 t=t->next;
             }
             t->next=t->next->next;
         }
     }
-    Node* get(int idx){
+    // Node* get(int idx){
 
-    }
+    // }
     void display(){
         Node* t=head;
         while(t!=NULL){
@@ -95,6 +98,9 @@ int main(){
     l.insertAtIdx(1,34);
     l.insertAtIdx(3,44);
     l.insertAtIdx(0,21);
+    // l.deleteHead();
+    // l.deleteTail();
+    l.deleteAtIdx(6);
     //l.insertAtIdx(8,11);
     l.display();
 }
