@@ -51,6 +51,10 @@ public:
                 }
                 t=t->next;
             }
+            if(t==NULL){
+                cout<<"Invalid Index"<<endl;
+                return;
+            }
             ptr->next=t->next;
             t->next=ptr;
         }
