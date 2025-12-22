@@ -69,7 +69,7 @@ public:
         else{
             Node* t=head;
             for(int i=1;i<=idx-1;i++){
-                if(t==NULL || t->next==NULL){
+                if(t || t->next || t->next->next){
                     cout<<"Invalid Input"<<endl;
                     return;
                 }
@@ -100,7 +100,7 @@ int main(){
     l.insertAtIdx(0,21);
     // l.deleteHead();
     // l.deleteTail();
-    l.deleteAtIdx(6);
+    l.deleteAtIdx(3);
     //l.insertAtIdx(8,11);
     l.display();
 }
