@@ -61,7 +61,18 @@ public:
         t->next=NULL;
     }
     void deleteAtIdx(int idx){
-        
+        if(idx<0){
+            cout<<"Invalid Input"<<endl;
+            return;
+        }
+        else if(idx==0) deleteHead();
+        else{
+            Node* t=head;
+            for(int i=1;i<=idx-1;i++){
+                t=t->next;
+            }
+            t->next=t->next->next;
+        }
     }
     Node* get(int idx){
 
