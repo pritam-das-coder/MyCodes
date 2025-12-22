@@ -32,7 +32,7 @@ public:
         }
         t->next=ptr;
     }
-    Node* insertAtIdx(int idx,int val){
+    void insertAtIdx(int idx,int val){
         if(idx==0) insertAtHead(val);
         else{
             Node* ptr=new Node(val);
@@ -40,13 +40,11 @@ public:
             for(int i=1;i<=idx-1;i++){
                 if(t==NULL){
                     cout<<"Invalid Index"<<endl;
-                    return head;
                 }
                 t=t->next;
             }
             ptr->next=t->next;
             t->next=ptr;
-            return head;
         }
     }
     Node* deleteHead(){
