@@ -123,7 +123,7 @@ statusBar=Frame(body)
 statusBar.pack(side="bottom",fill="x")
 
 Label(statusBar,text="Plain Text").pack(side="left")
-no_of_chars=IntVar()
-Label(statusBar,textvariable=no_of_chars).pack(side="left")
+# no_of_chars=IntVar()
+# Label(statusBar,textvariable=no_of_chars).pack(side="left")
 
 root.mainloop()
