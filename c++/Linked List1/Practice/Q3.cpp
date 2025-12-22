@@ -69,7 +69,7 @@ public:
         else{
             Node* t=head;
             for(int i=1;i<=idx-1;i++){
-                if(t || t->next || t->next->next){
+                if(t && t->next && t->next->next){
                     cout<<"Invalid Input"<<endl;
                     return;
                 }
