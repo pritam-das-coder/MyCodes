@@ -31,4 +31,5 @@ Button(my_frame1,text="Hide Tab 2",command=hide).pack(pady=15)
 Button(my_frame1,text="Show Tab 2",command=show).pack(pady=15)
 
 Button(my_frame1,text="Navigate to Tab 2",command=select).pack(pady=15)
+
 root.mainloop()
