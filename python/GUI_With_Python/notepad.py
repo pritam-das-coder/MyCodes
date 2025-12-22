@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk
 import tkinter.messagebox as tmsg
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 import os
@@ -109,6 +110,9 @@ m3 = Menu(mainmenu,tearoff=0)
 m3.add_command(label="About Notepad",command=about)
 
 mainmenu.add_cascade(label="Help",menu=m3)
+
+notebook=ttk.Notebook(root)
+notebook.pack(fill="both",expand=1)
 
 scroll = Scrollbar(root,width=25)
 scroll.pack(side="right",fill="y")
