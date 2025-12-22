@@ -36,7 +36,13 @@ public:
     Node* insertAtIdx(int idx,int val){
         if(idx==0) insertAtHead(val);
         else{
-            
+            Node* ptr=new Node(val);
+            Node* t=head;
+            for(int i=1;i<=idx-1;i++){
+                t=t->next;
+            }
+            ptr->next=t->next;
+            t->next=ptr;
         }
     }
 };
