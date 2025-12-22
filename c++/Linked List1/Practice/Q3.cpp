@@ -128,6 +128,13 @@ int main(){
     // l.deleteTail();
     //l.deleteAtIdx(9);
     //l.insertAtIdx(8,11);
-    cout<<l.get(5)->val<<endl;
+    Node* ele=l.get(6);
+    if(ele){
+        cout<<ele->val<<endl;
+    }
+    else{
+        cout<<"Invalid Input"<<endl;
+    }
+
     l.display();
 }
