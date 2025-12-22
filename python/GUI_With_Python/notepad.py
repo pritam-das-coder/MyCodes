@@ -5,10 +5,15 @@ from tkinter.filedialog import askopenfilename, asksaveasfilename
 import os
 
 def newTab():
+    scroll = Scrollbar(notebook,width=25)
+    scroll.pack(side="right",fill="y")
+
     text=Text(notebook,yscrollcommand=scroll.set,undo=True)
     text.pack(fill="both",expand=1)
     text.config(font="lucida 16")
     file=None
+    scroll.config(command=text.yview)
+
     notebook.add(text,text="Untitled")
 
 def closeTab():
