@@ -93,11 +93,15 @@ public:
         }
     }
     Node* get(int idx){
+        if(idx<0){
+            cout<<"Invalid Input"<<endl;
+            return NULL;
+        }
         Node* t=head;
         for(int i=1;i<=idx;i++){
             if(t==NULL){
                 cout<<"Invalid Input"<<endl;
-                return head;
+                return NULL;
             }
             t=t->next;
         }
