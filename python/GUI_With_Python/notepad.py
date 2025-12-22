@@ -84,10 +84,11 @@ mainmenu = Menu(root)
 root.config(menu=mainmenu)
 
 m1 = Menu(mainmenu,tearoff=0)
-m1.add_command(label="New",command=newFile)
+m1.add_command(label="New Tab",command=newTab)
 m1.add_command(label="Open",command=openFile)
 m1.add_command(label="Save",command=saveFile)
 m1.add_command(label="Save As",command=saveAsFile)
+m1.add_command(label="Close Tab",command=closeTab)
 m1.add_separator()
 m1.add_command(label="Exit",command=root.destroy)
 
