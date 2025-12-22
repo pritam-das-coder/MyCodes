@@ -36,7 +36,11 @@ public:
         t->next=ptr;
     }
     void insertAtIdx(int idx,int val){
-        if(idx==0) insertAtHead(val);
+        if(idx<0){
+            cout<<"Invalid Index"<<endl;
+            return;
+        }
+        else if(idx==0) insertAtHead(val);
         else{
             Node* ptr=new Node(val);
             Node* t=head;
