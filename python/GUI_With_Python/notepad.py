@@ -5,7 +5,7 @@ from tkinter.filedialog import askopenfilename, asksaveasfilename
 import os
 
 def newTab():
-    pass
+    notebook.add(text="Untitled")
 
 def closeTab():
     pass
