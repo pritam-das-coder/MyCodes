@@ -42,7 +42,6 @@ void sort(vector<int>& v){
         j++;
         k++;
     }
-    
 }
 int main(){
     int arr[]={7,1,2,-1,0,6,4};
