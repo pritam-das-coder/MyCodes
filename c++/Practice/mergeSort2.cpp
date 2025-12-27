@@ -13,8 +13,12 @@ void sort(vector<int>& v){
     while(i<n){
         b[j]=v[i];
         i++;
+        j++;
     }
+    sort(a);
+    sort(b);
     
+
 }
 int main(){
 
