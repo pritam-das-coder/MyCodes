@@ -32,7 +32,34 @@ public:
         }
         size++;
     }
-    void display(Node* head){
+    void insertAtTail(int val){
+        Node* temp=new Node(val);
+        if(size==0) head=tail=temp;
+        else{
+            tail->next=temp;
+            temp->prev=tail;
+            tail=temp;
+        }
+        size++;
+    }
+    void insertAtIdx(int idx,int val){
+        if(idx<0 || idx>size) cout<<"Invalid Index"<<endl;
+        else if(idx==0) insertAtHead(val);
+        else if(idx==size) insertAtTail(val);
+        else{
+            Node* ptr=new Node(val);
+            Node* temp=head;
+            for(int i=1;i<idx;i++){
+                temp=temp->next;
+            }
+            temp->next->prev=ptr;
+            ptr->next=temp->next;
+            temp->next=ptr;
+            ptr->prev=temp;
+            size++;
+        }
+    }
+    void display(){
         while(head){
             cout<<head->val<<" ";
             head=head->next;
@@ -42,5 +69,11 @@ public:
 };
 
 int main(){
-    
+    DLL list;
+    list.insertAtHead(3);
+    list.insertAtHead(8);
+    list.insertAtTail(9);
+    list.insertAtIdx(1,4);
+    list.insertAtIdx(3,12);
+    list.display();
 }
