@@ -23,7 +23,12 @@ public:
         size=0;
     }
     Node* insertAtHead(int val){
-        
+        Node* temp=new Node(val);
+        if(size==0) head=tail=temp;
+        else{
+            
+        }
+        size++;
     }
 };
 void display(Node* head){
