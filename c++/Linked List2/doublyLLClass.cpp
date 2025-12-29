@@ -22,11 +22,13 @@ public:
         head=tail=NULL;
         size=0;
     }
-    Node* insertAtHead(int val){
+    void insertAtHead(int val){
         Node* temp=new Node(val);
         if(size==0) head=tail=temp;
         else{
-            
+            temp->next=head;
+            head->prev=temp;
+            head=temp;
         }
         size++;
     }
