@@ -13,24 +13,6 @@ public:
     }
 };
 
-Node* buildDLL(){
-    // 10 20 30 40 50
-    Node* a=new Node(10);
-    Node* b=new Node(20);
-    Node* c=new Node(30);
-    Node* d=new Node(40);
-    Node* e=new Node(50);
-    a->next=b;
-    b->next=c;
-    b->prev=a;
-    c->prev=b;
-    c->next=d;
-    d->next=e;
-    d->prev=c;
-    e->prev=d;
-    return e;
-}
-
 void display(Node* head){
     while(head){
         cout<<head->val<<" ";
@@ -49,6 +31,7 @@ void displayRev(Node* tail){
 
 int main(){
     // 10 20 30 40 50
+    // a  b  c  d  e
     Node* a=new Node(10);
     Node* b=new Node(20);
     Node* c=new Node(30);
@@ -62,4 +45,6 @@ int main(){
     d->next=e;
     d->prev=c;
     e->prev=d;
+    displayRev(e);
+    display(a);
 }
