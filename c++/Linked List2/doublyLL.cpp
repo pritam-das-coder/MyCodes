@@ -28,7 +28,7 @@ Node* buildDLL(){
     d->next=e;
     d->prev=c;
     e->prev=d;
-    return a;
+    return e;
 }
 
 void display(Node* head){
@@ -38,7 +38,16 @@ void display(Node* head){
     }
     cout<<endl;
 }
+
+void displayRev(Node* tail){
+    while(tail){
+        cout<<tail->val<<" ";
+        tail=tail->prev;
+    }
+}
+
 int main(){
     Node* dll=buildDLL();
-    display(dll);
+    //display(dll);
+    displayRev(dll);
 }
