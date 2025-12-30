@@ -124,7 +124,7 @@ int main(){
     // list.deleteAtIdx(2);
     // cout<<list.size<<endl;
     list.display();
-    Node* ele=list.getAtIdx(3);
-    if(ele) cout<<ele->val<<endl;
+    // Node* ele=list.getAtIdx(3);
+    // if(ele) cout<<ele->val<<endl;
     // list.display();
 }
