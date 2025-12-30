@@ -33,7 +33,13 @@ int main(){
     Node* head=a;
     display(head);
 
-    Node* ptr=new Node(50);
+    Node* ptr=new Node(25);
+    Node* temp=head;
+    while(temp->next!=head){
+        temp=temp->next;
+    }
+    temp->next=ptr;
+    ptr->next=head;
     
     display(head);
 }
