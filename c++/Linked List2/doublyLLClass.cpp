@@ -61,10 +61,7 @@ public:
     }
     void deleteAtHead(){
         if(size==0) cout<<"Empty LL"<<endl;
-        else if(size==1){
-            delete head;
-            head=tail=NULL; 
-        } 
+        else if(size==1) head=tail=NULL; 
         else{
             head->next->prev=NULL;
             head=head->next;
