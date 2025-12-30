@@ -103,9 +103,10 @@ public:
         return temp;
     }
     void display(){
-        while(head){
-            cout<<head->val<<" ";
-            head=head->next;
+        Node* temp=head;
+        while(temp){
+            cout<<temp->val<<" ";
+            temp=temp->next;
         }
         cout<<endl;
     }
@@ -125,4 +126,5 @@ int main(){
     list.display();
     Node* ele=list.getAtIdx(3);
     if(ele) cout<<ele->val<<endl;
+    // list.display();
 }
