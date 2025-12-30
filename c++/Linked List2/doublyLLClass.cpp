@@ -77,6 +77,16 @@ public:
         }
         size--;
     }
+    void deleteAtIdx(int idx){
+        if(idx<0 || idx>=size) cout<<"Invalid Index"<<endl;
+        else if(idx==0) deleteAtHead();
+        else if(idx==size-1) deleteAtTail();
+        else{
+            for(int i=1;i<idx;i++){
+                
+            }
+        }
+    }
     void display(){
         while(head){
             cout<<head->val<<" ";
