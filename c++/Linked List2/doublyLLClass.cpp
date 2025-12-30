@@ -91,6 +91,9 @@ public:
             size--;
         }
     }
+    Node* getAtIdx(int idx){
+        
+    }
     void display(){
         while(head){
             cout<<head->val<<" ";
