@@ -59,8 +59,9 @@ public:
             size++;
         }
     }
-    void deleteAtHead(Node* head){
+    void deleteAtHead(){
         if(size==0) cout<<"Empty LL"<<endl;
+        else if(size==1) head=tail=NULL;
         else{
             head->next->prev=NULL;
             head=head->next;
@@ -82,5 +83,6 @@ int main(){
     list.insertAtTail(9);
     list.insertAtIdx(1,4);
     list.insertAtIdx(3,12);
+    list.deleteAtHead();
     list.display();
 }
