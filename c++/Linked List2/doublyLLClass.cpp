@@ -98,7 +98,7 @@ public:
         } 
         Node* temp=tail;
         for(int i=1;i<size-idx;i++){
-            temp=temp->next;
+            temp=temp->prev;
         }
         return temp;
     }
@@ -118,11 +118,11 @@ int main(){
     list.insertAtTail(9);
     list.insertAtIdx(1,4);
     list.insertAtIdx(3,12);
-    list.deleteAtHead();
+    // list.deleteAtHead();
     // list.deleteAtTail();
     // list.deleteAtIdx(2);
     // cout<<list.size<<endl;
     list.display();
-    Node* ele=list.getAtIdx(2);
-    cout<<ele->val<<endl;
+    Node* ele=list.getAtIdx(3);
+    if(ele) cout<<ele->val<<endl;
 }
