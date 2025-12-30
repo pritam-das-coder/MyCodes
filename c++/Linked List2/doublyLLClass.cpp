@@ -66,6 +66,16 @@ public:
             head->next->prev=NULL;
             head=head->next;
         }
+        size--;
+    }
+    void deleteAtTail(){
+        if(size==0) cout<<"Empty LL"<<endl;
+        else if(size==1) head=tail=NULL;
+        else{
+            tail=tail->prev;
+            tail->next=NULL;
+        }
+        size--;
     }
     void display(){
         while(head){
@@ -84,5 +94,6 @@ int main(){
     list.insertAtIdx(1,4);
     list.insertAtIdx(3,12);
     list.deleteAtHead();
+    list.deleteAtTail();
     list.display();
 }
