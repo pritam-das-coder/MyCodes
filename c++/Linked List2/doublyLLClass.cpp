@@ -59,6 +59,13 @@ public:
             size++;
         }
     }
+    void deleteAtHead(Node* head){
+        if(size==0) cout<<"Empty LL"<<endl;
+        else{
+            head->next->prev=NULL;
+            head=head->next;
+        }
+    }
     void display(){
         while(head){
             cout<<head->val<<" ";
