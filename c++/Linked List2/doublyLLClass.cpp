@@ -124,5 +124,5 @@ int main(){
     // cout<<list.size<<endl;
     list.display();
     Node* ele=list.getAtIdx(2);
-    if(ele) cout<<ele->val<<endl;
+    cout<<ele->val<<endl;
 }
