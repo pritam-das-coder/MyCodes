@@ -15,7 +15,7 @@ public:
 void display(Node* head){
     Node* temp=head;
     do{
-        cout<<temp->val<<endl;
+        cout<<temp->val<<" ";
         temp=temp->next;
     }while(temp!=head);
     cout<<endl;
