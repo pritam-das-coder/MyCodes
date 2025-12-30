@@ -82,9 +82,13 @@ public:
         else if(idx==0) deleteAtHead();
         else if(idx==size-1) deleteAtTail();
         else{
+            Node* temp=head;
             for(int i=1;i<idx;i++){
-                
+                temp=temp->next;
             }
+            temp->next=temp->next->next;
+            temp->next->prev=temp;
+            size--;
         }
     }
     void display(){
@@ -104,6 +108,8 @@ int main(){
     list.insertAtIdx(1,4);
     list.insertAtIdx(3,12);
     list.deleteAtHead();
-    list.deleteAtTail();
+    // list.deleteAtTail();
+    list.deleteAtIdx(2);
+    // cout<<list.size<<endl;
     list.display();
 }
