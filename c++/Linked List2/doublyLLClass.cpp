@@ -92,7 +92,12 @@ public:
         }
     }
     Node* getAtIdx(int idx){
-        
+        if(idx<0 || idx>=size) cout<<"Invalid Index"<<endl;
+        Node* temp=tail;
+        for(int i=1;i<size-idx;i++){
+            temp=temp->next;
+        }
+        return temp;
     }
     void display(){
         while(head){
@@ -112,7 +117,7 @@ int main(){
     list.insertAtIdx(3,12);
     list.deleteAtHead();
     // list.deleteAtTail();
-    list.deleteAtIdx(2);
+    // list.deleteAtIdx(2);
     // cout<<list.size<<endl;
     list.display();
 }
