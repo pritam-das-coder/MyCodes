@@ -7,7 +7,14 @@ class TextEditor:
         self.root = root
         self.root.title("My Text Editor")
         self.root.geometry("900x600")
-        self.root.wm_iconbitmap(r"notepad.ico")
+
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        icon_path = os.path.join(script_dir, "notepad.ico")
+
+        try:
+            self.root.wm_iconbitmap(icon_path)
+        except Exception:
+            print(f"Warning: Could not find icon at {icon_path}")
 
         # Track theme state (True = Dark, False = Light)
         self.is_dark_mode = False
