@@ -12,6 +12,9 @@ int main(){
     // st.pop();
     // cout<<st.size()<<endl;
     // cout<<st.top()<<endl;
-    
+    while(st.size()){
+        cout<<st.top()<<endl;
+        st.pop();
+    }
     return 0;
 }
