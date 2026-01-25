@@ -1,6 +1,22 @@
 #include <iostream>
 #include <stack>
 using namespace std;
+void print(stack<int>& st){
+    stack<int> temp;
+    // st to temp
+    while(st.size()){
+        int x=st.top();
+        st.pop();
+        temp.push(x);
+    }
+    // temp to st
+    while(temp.size()){
+        int x=temp.top();
+        cout<<x<<" ";
+        temp.pop();
+        st.push(x);
+    }
+}
 void transfer(stack<int>& a,stack<int>& b){ // a to b
     while(a.size()){
         b.push(a.top());
