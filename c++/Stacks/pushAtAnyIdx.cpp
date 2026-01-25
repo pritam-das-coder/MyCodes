@@ -39,7 +39,7 @@ int main(){
     st.push(40);
     st.push(50);
     pushAtIndex(st,2,90);
-    
+
     print(st);
 
     return 0;
