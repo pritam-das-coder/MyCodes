@@ -13,8 +13,9 @@ int main(){
     // cout<<st.size()<<endl;
     // cout<<st.top()<<endl;
     while(st.size()){
-        cout<<st.top()<<endl;
+        cout<<st.top()<<" ";
         st.pop();
     }
+    // cout<<endl<<st.size()<<endl;
     return 0;
 }
