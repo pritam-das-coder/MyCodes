@@ -1,7 +1,18 @@
-// Normal Print
 #include <iostream>
 #include <stack>
 using namespace std;
+void pushAtBottom(stack<int>& st,int val){
+    stack<int> temp;
+    while(st.size()){
+        temp.push(st.top());
+        st.pop();
+    }
+    st.push(val);
+    while(temp.size()){
+        st.push(temp.top());
+        temp.pop();
+    }
+}
 int main(){
     stack<int> st;
     stack<int> temp;
@@ -9,19 +20,6 @@ int main(){
     st.push(20);
     st.push(30);
     st.push(40);
-    // st to temp
-    while(st.size()){
-        int x=st.top();
-        st.pop();
-        temp.push(x);
-    }
-    // temp to st
-    while(temp.size()){
-        int x=temp.top();
-        cout<<x<<" ";
-        temp.pop();
-        st.push(x);
-    }
-    cout<<endl<<st.size()<<endl;
+    
     return 0;
 }
