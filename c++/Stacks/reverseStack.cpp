@@ -1,3 +1,4 @@
+// Reverse a stack
 #include <iostream>
 #include <stack>
 using namespace std;
@@ -39,7 +40,7 @@ int main(){
     transfer(st,t1);
     transfer(t1,t2);
     transfer(t2,st);
-    
+
     print(st);
 
     return 0;
