@@ -13,6 +13,11 @@ void pushAtBottom(stack<int>& st,int val){
         temp.pop();
     }
 }
+void pushAtBottomRec(stack<int>& st,int val){
+    int x=st.top();
+    st.pop();
+    
+}
 void print(stack<int>& st){
     stack<int> temp;
     // st to temp
