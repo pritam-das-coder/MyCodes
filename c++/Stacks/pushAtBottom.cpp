@@ -14,7 +14,7 @@ void pushAtBottom(stack<int>& st,int val){
     }
 }
 void pushAtBottomRec(stack<int>& st,int val){
-    if(st.size()){
+    if(st.size()==0){
         st.push(val);
         return;
     }
