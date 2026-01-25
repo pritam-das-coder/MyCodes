@@ -12,13 +12,13 @@ int main(){
     // st to temp
     while(st.size()){
         int x=st.top();
-        cout<<x<<" ";
         st.pop();
         temp.push(x);
     }
     // temp to st
     while(temp.size()){
         int x=temp.top();
+        cout<<x<<" ";
         temp.pop();
         st.push(x);
     }
