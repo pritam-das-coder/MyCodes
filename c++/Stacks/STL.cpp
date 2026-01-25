@@ -19,6 +19,11 @@ int main(){
         st.pop();
         temp.push(x);
     }
-    // cout<<endl<<st.size()<<endl;
+    while(temp.size()){
+        int x=temp.top();
+        temp.pop();
+        st.push(x);
+    }
+    cout<<endl<<st.size()<<endl;
     return 0;
 }
