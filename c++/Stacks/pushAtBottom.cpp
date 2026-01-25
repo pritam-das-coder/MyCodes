@@ -14,9 +14,14 @@ void pushAtBottom(stack<int>& st,int val){
     }
 }
 void pushAtBottomRec(stack<int>& st,int val){
+    if(st.size()){
+        st.push(val);
+        return;
+    }
     int x=st.top();
     st.pop();
-    
+    pushAtBottomRec(st,val);
+    st.push(x);
 }
 void print(stack<int>& st){
     stack<int> temp;
@@ -42,8 +47,8 @@ int main(){
     st.push(20);
     st.push(30);
     st.push(40);
-    pushAtBottom(st,50);
-    pushAtBottom(st,60);
+    //pushAtBottom(st,50);
+    pushAtBottomRec(st,60);
     print(st);
 
     return 0;
