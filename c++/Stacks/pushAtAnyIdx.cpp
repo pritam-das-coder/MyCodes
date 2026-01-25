@@ -37,6 +37,8 @@ int main(){
     st.push(20);
     st.push(30);
     st.push(40);
+    st.push(50);
+    pushAtIndex(st,2,90);
     
     print(st);
 
