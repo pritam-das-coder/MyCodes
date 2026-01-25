@@ -3,7 +3,8 @@
 using namespace std;
 void pushAtIndex(stack<int>& st,int idx,int val){
     stack<int> temp;
-    for(int i=0;i<st.size()-idx;i++){
+    int x=st.size()-idx;
+    for(int i=0;i<x;i++){
         temp.push(st.top());
         st.pop();
     }
