@@ -1,7 +1,7 @@
-// Print a stack in reverse order by recursion
 #include <iostream>
 #include <stack>
 using namespace std;
+// Print a stack in reverse order by recursion
 void printRecRev(stack<int>& st){
     if(st.size()==0) return;
     int x=st.top();
@@ -10,6 +10,7 @@ void printRecRev(stack<int>& st){
     printRecRev(st);
     st.push(x);
 }
+// Print a stack in normal order by recursion
 void printRec(stack<int>& st){
     if(st.size()==0) return;
     int x=st.top();
