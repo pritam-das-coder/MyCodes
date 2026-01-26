@@ -36,7 +36,11 @@ int main(){
         st.pop();
         v.push_back(x);
     }
-    
+    int i=0;
+    while(i<v.size()){
+        st.push(v[i]);
+        i++;
+    }
 
     print(st);
 
