@@ -14,6 +14,18 @@ void pushAtIndex(stack<int>& st,int idx,int val){
         temp.pop();
     }
 }
+void pushAtIndex2(stack<int>& st,int idx,int val){
+    stack<int> temp;
+    while(st.size()!=idx){
+        temp.push(st.top());
+        st.pop();
+    }
+    st.push(val);
+    while(temp.size()){
+        st.push(temp.top());
+        temp.pop();
+    }
+}
 void print(stack<int>& st){
     stack<int> temp;
     // st to temp
@@ -39,7 +51,8 @@ int main(){
     st.push(30);
     st.push(40);
     st.push(50);
-    pushAtIndex(st,2,90);
+    print(st);
+    pushAtIndex2(st,3,90);
 
     print(st);
 
