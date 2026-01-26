@@ -1,7 +1,6 @@
-// Copy stack into another stack in same order 
+// Reverse a stack by recursion
 #include <iostream>
 #include <stack>
-#include <vector>
 using namespace std;
 void print(stack<int>& st){
     if(st.size()==0){
@@ -43,11 +42,11 @@ void reverse(stack<int>& st){
 }
 int main(){
     stack<int> st;
-    st.push(10);
-    st.push(20);
-    st.push(30);
-    st.push(40);
-    st.push(50);
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.push(5);
     
     print(st);
 
