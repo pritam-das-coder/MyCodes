@@ -4,6 +4,10 @@
 #include <vector>
 using namespace std;
 void print(stack<int>& st){
+    if(st.size()==0){
+        cout<<"Stack is Empty"<<endl;
+        return;
+    } 
     stack<int> temp;
     // st to temp
     while(st.size()){
@@ -20,9 +24,16 @@ void print(stack<int>& st){
     }
     cout<<endl;
 }
+void transfer(stack<int>& a,stack<int>& b){
+    while(a.size()){
+        b.push(a.top());
+        a.pop();
+    }
+}
 int main(){
     stack<int> st;
-    vector<int> v;
+    stack<int> gt;
+    stack<int> temp;
     st.push(10);
     st.push(20);
     st.push(30);
@@ -31,18 +42,10 @@ int main(){
     
     print(st);
 
-    while(st.size()){
-        int x=st.top();
-        st.pop();
-        v.push_back(x);
-    }
-    int i=0;
-    while(i<v.size()){
-        st.push(v[i]);
-        i++;
-    }
+    transfer(st,temp);
+    transfer(temp,gt);
 
+    print(gt);
     print(st);
-
     return 0;
 }
