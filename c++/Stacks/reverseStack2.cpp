@@ -1,4 +1,4 @@
-// Reverse a stack using an extra array
+// Reverse a stack using an extra array/vector
 #include <iostream>
 #include <stack>
 #include <vector>
