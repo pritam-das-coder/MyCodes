@@ -24,16 +24,9 @@ void print(stack<int>& st){
     }
     cout<<endl;
 }
-void transfer(stack<int>& a,stack<int>& b){
-    while(a.size()){
-        b.push(a.top());
-        a.pop();
-    }
-}
+
 int main(){
     stack<int> st;
-    stack<int> gt;
-    stack<int> temp;
     st.push(10);
     st.push(20);
     st.push(30);
@@ -42,10 +35,8 @@ int main(){
     
     print(st);
 
-    transfer(st,temp);
-    transfer(temp,gt);
+    
 
-    print(gt);
     print(st);
     return 0;
 }
