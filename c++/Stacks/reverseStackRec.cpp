@@ -51,7 +51,7 @@ int main(){
     
     print(st);
 
-    
+    reverse(st);
 
     print(st);
     return 0;
