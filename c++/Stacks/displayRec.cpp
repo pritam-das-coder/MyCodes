@@ -2,12 +2,20 @@
 #include <iostream>
 #include <stack>
 using namespace std;
-void printRec(stack<int>& st){
+void printRecRev(stack<int>& st){
     if(st.size()==0) return;
     int x=st.top();
     cout<<x<<" ";
     st.pop();
     printRec(st);
+    st.push(x);
+}
+void printRec(stack<int>& st){
+    if(st.size()==0) return;
+    int x=st.top();
+    st.pop();
+    printRec(st);
+    cout<<x<<" ";
     st.push(x);
 }
 int main(){
