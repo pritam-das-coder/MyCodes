@@ -25,7 +25,14 @@ void print(stack<int>& st){
     cout<<endl;
 }
 void pushAtBottom(stack<int>& st,int val){
-    
+    if(st.size()==0){
+        st.push(val);
+        return;
+    }
+    int x=st.top();
+    st.pop();
+    pushAtBottom(st,val);
+    st.push(x);
 }
 void reverse(stack<int>& st){
     if(st.size()==0) return;
