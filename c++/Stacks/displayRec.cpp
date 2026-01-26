@@ -1,7 +1,6 @@
-// Copy stack into another stack in same order 
+// Print a stack in reverse order by recursion
 #include <iostream>
 #include <stack>
-#include <vector>
 using namespace std;
 void printRec(stack<int>& st){
     if(st.size()==0) return;
