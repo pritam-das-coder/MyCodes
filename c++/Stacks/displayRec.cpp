@@ -7,7 +7,7 @@ void printRecRev(stack<int>& st){
     int x=st.top();
     cout<<x<<" ";
     st.pop();
-    printRec(st);
+    printRecRev(st);
     st.push(x);
 }
 void printRec(stack<int>& st){
