@@ -17,6 +17,6 @@ bool check(string s){
     return (st.size()==0);
 }
 int main(){
-    cout<<check("((()()))");
+    cout<<check("())()(");
     return 0;
 }
