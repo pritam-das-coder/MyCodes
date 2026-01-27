@@ -10,7 +10,8 @@ public:
         idx=-1;
     }
     void push(int val){
-        if(idx==10-1){
+        int maxSize=sizeof(arr)/sizeof(arr[0]);
+        if(idx==maxSize-1){
             cout<<"Stack is Full!"<<endl;
             return;
         }
