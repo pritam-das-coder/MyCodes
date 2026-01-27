@@ -20,6 +20,10 @@ public:
         idx--;
     }
     int top(){
+        if(idx<0){
+            cout<<"Stack is Empty"<<endl;
+            return;
+        }
         return arr[idx];
     }
 };
