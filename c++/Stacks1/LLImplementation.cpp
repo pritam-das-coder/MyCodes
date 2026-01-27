@@ -1,4 +1,6 @@
 #include <iostream>
+#include <climits>
+using namespace std;
 class Node{
 public:
     int val;
@@ -21,6 +23,28 @@ public:
         Node* temp=new Node(val);
         temp->next=head;
         head=temp;
-        
+        size++;
     }
+    void pop(){
+        if(size==0){
+            cout<<"Stack is Empty"<<endl;
+            return;
+        }
+        head=head->next;
+        size--;
+    }
+    int top(){
+        if(size==0){
+            cout<<"Stack is Empty"<<endl;
+            return INT_MIN;
+        }
+        return head->val;
+    }
+    int size(){
+        return size;
+    }
+    
 };
+int main(){
+
+}
