@@ -8,5 +8,7 @@ class Node{
     }
 };
 class Stack{
+    Node* head;
+    int size;
     
 };
