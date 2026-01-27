@@ -43,7 +43,10 @@ public:
     int size(){
         return size;
     }
-    
+    void print(){
+        Node* t=head;
+        
+    }
 };
 int main(){
 
