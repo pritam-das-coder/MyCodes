@@ -40,14 +40,24 @@ public:
         }
         return head->val;
     }
-    int size(){
+    int length(){
         return size;
     }
     void print(){
         Node* t=head;
-        
+        while(t){
+            cout<<t->val<<" ";
+            t=t->next;
+        }
     }
 };
 int main(){
-
+    Stack st;
+    st.push(10);
+    st.push(20);
+    st.push(30);
+    cout<<st.length()<<endl;
+    st.pop();
+    cout<<st.top()<<endl;
+    st.print();
 }
