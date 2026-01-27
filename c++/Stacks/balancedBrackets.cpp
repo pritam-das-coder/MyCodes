@@ -10,6 +10,7 @@ bool check(string s){
             st.push(ch);
         }
         else{
+            if(st.size()) return false;
             st.pop();
         }
     }
