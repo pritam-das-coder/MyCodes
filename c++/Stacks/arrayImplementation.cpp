@@ -2,9 +2,10 @@
 #include <climits>
 using namespace std;
 class Stack{
-public:
+private:
     int arr[10];
     int idx;
+public:
     Stack(){
         idx=-1;
     }
