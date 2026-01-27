@@ -10,13 +10,13 @@ bool check(string s){
             st.push(ch);
         }
         else{
-            if(st.size()) return false;
+            if(st.size()==0) return false;
             st.pop();
         }
     }
     return (st.size()==0);
 }
 int main(){
-    
+    cout<<check("((()()))");
     return 0;
 }
