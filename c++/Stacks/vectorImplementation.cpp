@@ -10,10 +10,10 @@ public:
         v.push_back(val);
     }
     void pop(){
-        if(v.size()==0){
-            cout<<"Stack is Empty!"<<endl;
-            return;
-        }
+        // if(v.size()==0){
+        //     cout<<"Stack is Empty!"<<endl;
+        //     return;
+        // }
         v.pop_back();
     }
     int top(){
