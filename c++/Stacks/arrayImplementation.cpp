@@ -3,7 +3,7 @@
 using namespace std;
 class Stack{
 private:
-    int arr[10];
+    int arr[5];
     int idx;
 public:
     Stack(){
@@ -20,14 +20,14 @@ public:
     }
     void pop(){
         if(idx==-1){
-            cout<<"Stack is Empty"<<endl;
+            cout<<"Stack is Empty!"<<endl;
             return;
         }
         idx--;
     }
     int top(){
         if(idx==-1){
-            cout<<"Stack is Empty"<<endl;
+            cout<<"Stack is Empty!"<<endl;
             return INT_MIN;
         }
         return arr[idx];
@@ -42,6 +42,10 @@ int main(){
     st.push(40);
     cout<<st.top()<<endl;
     cout<<st.size()<<endl;
+    st.push(67);
+    st.push(9);
+    st.push(45);
+    st.push(12);
     st.pop();
     st.pop();
     st.pop();
