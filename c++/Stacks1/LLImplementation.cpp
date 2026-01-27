@@ -43,12 +43,21 @@ public:
     int length(){
         return size;
     }
-    void print(){
+    void printRev(){
         Node* t=head;
         while(t){
             cout<<t->val<<" ";
             t=t->next;
         }
+    }
+    void print(Node* h){
+        if(h==NULL) return;
+        print(h->next);
+        cout<<h->val<<" ";
+    }
+    void display(){
+        Node* temp=head;
+        print(temp);
     }
 };
 int main(){
@@ -56,8 +65,10 @@ int main(){
     st.push(10);
     st.push(20);
     st.push(30);
-    cout<<st.length()<<endl;
-    st.pop();
-    cout<<st.top()<<endl;
-    st.print();
+    st.push(40);
+    st.push(50);
+    // cout<<st.length()<<endl;
+    // st.pop();
+    // cout<<st.top()<<endl;
+    st.display();
 }
