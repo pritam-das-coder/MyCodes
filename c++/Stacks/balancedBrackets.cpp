@@ -2,7 +2,7 @@
 #include <stack>
 #include <string>
 using namespace std;
-void check(string s){
+bool check(string s){
     stack<char> st;
     for(int i=0;i<s.size();i++){
         char ch=s[i];
@@ -13,6 +13,7 @@ void check(string s){
             st.pop();
         }
     }
+    return (st.size()==0);
 }
 int main(){
     
