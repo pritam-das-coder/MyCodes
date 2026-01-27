@@ -38,9 +38,11 @@ int main(){
     Stack st;
     st.push(4);
     st.push(40);
+    cout<<st.top()<<endl;
+    cout<<st.size()<<endl;
     st.pop();
     st.pop();
     st.pop();
-
+    cout<<st.size()<<endl;
     return 0;
 }
