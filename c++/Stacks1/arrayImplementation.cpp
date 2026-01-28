@@ -36,22 +36,26 @@ public:
         return idx+1;
     }
     void print(){
-        
+        for(int i=0;i<=idx;i++){
+            cout<<arr[i]<<" ";
+        }
+        cout<<endl;
     }
 };
 int main(){
     Stack st;
     st.push(4);
     st.push(40);
-    cout<<st.top()<<endl;
-    cout<<st.size()<<endl;
+    // cout<<st.top()<<endl;
+    // cout<<st.size()<<endl;
     st.push(67);
     st.push(9);
     st.push(45);
     st.push(12);
-    st.pop();
-    st.pop();
-    st.pop();
-    cout<<st.size()<<endl;
+    // st.pop();
+    // st.pop();
+    // st.pop();
+    // cout<<st.size()<<endl;
+    st.print();
     return 0;
 }
