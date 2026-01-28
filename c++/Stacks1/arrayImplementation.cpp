@@ -35,6 +35,9 @@ public:
     int size(){
         return idx+1;
     }
+    void print(){
+        
+    }
 };
 int main(){
     Stack st;
