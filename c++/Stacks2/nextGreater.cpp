@@ -11,6 +11,7 @@ int main(){
     cout<<endl;
 
     // finding ans array
+    // SC=O(n) TC=
     int ans[n];
     stack<int> st;
     ans[n-1]=-1;
