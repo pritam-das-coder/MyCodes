@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 int main(){
-    int arr[]={100,80,81,70,60,75,85};
+    int arr[]={100,80,60,81,70,60,75,85};
     int n=sizeof(arr)/sizeof(arr[0]);
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
@@ -28,7 +28,7 @@ int main(){
     }
 
     for(int i=0;i<n;i++){
-        cout<<span[i]<<" ";
+        cout<<pgi[i]<<" ";
     }
     cout<<endl;
 }
