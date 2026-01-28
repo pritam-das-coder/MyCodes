@@ -18,7 +18,7 @@ int main(){
     st.push(0);
     for(int i=1;i<n;i++){
         while(st.size() && arr[st.top()]<=arr[i]) st.pop();
-        if(st.size()==0) pgi[i]=1;
+        if(st.size()==0) pgi[i]=-1;
         else pgi[i]=st.top();
         st.push(i);
     }
