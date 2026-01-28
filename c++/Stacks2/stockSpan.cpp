@@ -20,7 +20,11 @@ int main(){
         while(st.size() && arr[st.top()]<=arr[i]) st.pop();
         if(st.size()==0) ans[i]=1;
         else ans[i]=st.top();
-        st.push(arr[i]);
+        st.push(i);
+    }
+    for(int i=0;i<n;i++){
+        if(ans[i]==1) continue;
+        ans[i]=i-ans[i];
     }
 
     for(int i=0;i<n;i++){
