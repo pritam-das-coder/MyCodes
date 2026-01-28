@@ -28,7 +28,7 @@ int main(){
     }
 
     for(int i=0;i<n;i++){
-        cout<<pgi[i]<<" ";
+        cout<<span[i]<<" ";
     }
     cout<<endl;
 }
