@@ -9,16 +9,22 @@ int main(){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
+
+    // finding ans array
     int ans[n];
     stack<int> st;
     ans[n-1]=-1;
     st.push(arr[n-1]);
     for(int i=n-2;i>=0;i--){
-        while(st.size() && st.top()<=arr[i]) st.pop();
+        // pop
+        while(st.size() && st.top()<=arr[i]) st.pop(); 
+        // ans
         if(st.size()==0) ans[i]=-1;
         else ans[i]=st.top();
+        // push
         st.push(arr[i]);
     }
+
     for(int i=0;i<n;i++){
         cout<<ans[i]<<" ";
     }
