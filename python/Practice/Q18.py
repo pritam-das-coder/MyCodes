@@ -1,0 +1,1 @@
+# Write a division program that takes a numerator and a denominator from the user. Implement a try-except block to handle both ZeroDivisionError (if the user tries to divide by zero) and ValueError (if the user inputs a string instead of a number). Add a finally block to print "Execution completed."
