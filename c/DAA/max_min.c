@@ -1,6 +1,6 @@
 #include <stdio.h>
 void MAX_MIN(int a[],int i, int j, int* max, int* min){
-    if(i==j) *max=*min=a[i]; // one element
+    if(i==j) *max=*min=a[i]; // single element
     else if(i==j-1){ // two element
         if(a[i]<a[j]){
             *min=a[i];
