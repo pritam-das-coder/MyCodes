@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <climits>
+#include <queue>
 #define INF 1000
 using namespace std;
 void ShortestPaths(int v, vector<vector<int>>& cost, vector<int>& dist, int n){// v=0
@@ -12,17 +13,14 @@ void ShortestPaths(int v, vector<vector<int>>& cost, vector<int>& dist, int n){/
     S[v]=true;
     dist[v]=0;
 
+    priority_queue< pair<int,int> ,vector< pair<int,int> > ,greater< pair<int,int> > > pq;
+    for(int i=0;i<n;i++){
+        if(dist[i]!=0) pq.push({dist[i],i});
+    }
     for(int i=1;i<n;i++){ // Relaxation
-        int u=-1;
-        int minDist=INT_MAX;
-        for(int j=0;j<n;j++){
-            if(S[j]==false){
-                if(minDist>dist[j]){
-                    minDist=dist[j];
-                    u=j;
-                }
-            }
-        }
+
+        int u=pq.top().second;
+        pq.pop();
 
         S[u]=true;
 
