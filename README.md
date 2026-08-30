@@ -47,7 +47,7 @@ For Python: Run the .py files using python3 filename.py.
 
 For Java: Compile using javac filename.java and execute with java filename.
 
-📫 Connect With Me
+## 📫 Connect With Me
 
 I am always open to feedback, collaboration, and networking!
 
