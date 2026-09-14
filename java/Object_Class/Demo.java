@@ -5,6 +5,9 @@ public class Demo {
         s1.age = 20;
         System.out.println(s1.toString());// Student@15db9742
 
+        String st = "Hello : "+s1;
+        System.out.println(st);
+
         // Student s2 = new Student();
         // System.out.println(s2.toString());// Student@6d06d69c
     }
