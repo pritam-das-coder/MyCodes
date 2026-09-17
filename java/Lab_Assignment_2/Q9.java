@@ -1,4 +1,4 @@
-// Write a program in java to implement dynamic method dispatch concept.
+    // Write a program in java to implement dynamic method dispatch concept.
 public class Q9 {
     public static void main(String[] args) {
         Teenager teenager = new Teenager();
